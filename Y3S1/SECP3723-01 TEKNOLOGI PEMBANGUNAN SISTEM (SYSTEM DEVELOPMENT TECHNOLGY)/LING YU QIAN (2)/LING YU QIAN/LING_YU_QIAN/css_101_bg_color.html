@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+body {
+  background-color: lightblue;
+}
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: pink;
+}
+
+p {
+  background-color: yellow;
+}
+
+div.first {
+  opacity: 0.2;
+}
+
+div.second {
+  opacity: 0.4;
+}
+
+div.third {
+  opacity: 0.6;
+}
+
+div.ori {
+  background: rgb(0, 128, 0);
+}
+
+div.one {
+  background: rgba(0, 128, 0, 0.15);
+}
+
+div.two {
+  background: rgba(0, 128, 0, 0.4);
+}
+
+div.three {
+  background: rgba(0, 128, 0, 0.7);
+}
+
+</style>
+</head>
+<body>
+
+<h1>Hello Moshi Moshi!</h1>
+
+<p>This page has a light blue background color!</p>
+
+<h1>CSS background-color example!</h1>
+<div>
+This is a text inside a div element.
+<p>This paragraph has its own background color.</p>
+We are still in the div element.
+</div>
+
+<h1>Transparent Boxes</h1>
+
+<p>When using the opacity property to add transparency to the background of an element, all of its child elements become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+<div class="first">
+  <h1>opacity 0.2</h1>
+</div>
+
+<div class="second">
+  <h1>opacity 0.4</h1>
+</div>
+
+<div class="third">
+  <h1>opacity 0.6</h1>
+</div>
+
+<div>
+  <h1>opacity 1 (default)</h1>
+</div>
+
+<h1>Transparent Boxes 2</h1>
+
+<p>Result with opacity:</p>
+
+<div style="opacity:0.15;">
+  <h1>15% opacity</h1>
+</div>
+
+<div style="opacity:0.4;">
+  <h1>40% opacity</h1>
+</div>
+
+<div style="opacity:0.7;">
+  <h1>70% opacity</h1>
+</div>
+
+<div style="opacity:1.0;">
+  <h1>opacity 1</h1>
+</div>
+
+<p>Result with rgba():</p>
+
+<div class="one">
+  <h1>15% opacity</h1>
+</div>
+
+<div class="two">
+  <h1>40% opacity</h1>
+</div>
+
+<div class="three">
+  <h1>70% opacity</h1>
+</div>
+
+<div class="ori">
+  <h1>default</h1>
+</div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

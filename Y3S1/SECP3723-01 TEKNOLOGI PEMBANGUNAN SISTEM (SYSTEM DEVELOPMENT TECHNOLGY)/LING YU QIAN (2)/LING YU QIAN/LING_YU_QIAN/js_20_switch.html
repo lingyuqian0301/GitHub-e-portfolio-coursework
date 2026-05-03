@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Switch</title>
+</head>
+<body>
+
+<h1>JS Switch</h1>
+<p>The <code>switch</code> statement is used to perform different actions based on different conditions.</p>
+
+<p id="demo"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+}
+
+document.getElementById("demo").innerHTML = "Today is " + day;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

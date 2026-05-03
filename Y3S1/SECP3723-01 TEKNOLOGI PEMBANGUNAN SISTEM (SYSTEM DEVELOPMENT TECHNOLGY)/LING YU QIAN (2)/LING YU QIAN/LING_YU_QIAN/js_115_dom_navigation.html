@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Navigation</title>
+</head>
+<body>
+
+<h1>DOM Navigation</h1>
+<p>With the HTML DOM, you can navigate the node tree using node relationships.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+text += "Parent node: " + document.body.parentNode.nodeName + "<br>";
+text += "First child: " + document.body.firstChild.nodeName + "<br>";
+text += "Last child: " + document.body.lastChild.nodeName;
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

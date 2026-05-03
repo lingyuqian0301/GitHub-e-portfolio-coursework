@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 16px;
+}
+
+button.a {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 6px;
+}
+
+button.b {
+  --blue: #0000ff; /* local variable will override global */
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 6px;
+}
+
+button.c {
+  --button-blue: #0000ff; /* new local variable */
+  background-color: var(--white);
+  color: var(--button-blue);
+  border: 1px solid var(--button-blue);
+  padding: 6px;
+}
+</style>
+</head>
+<body>
+
+<h1>Using the var() Function</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+    <button class="a">Yes</button>
+    <button class="a">No</button>
+  </p>
+</div>
+
+<h1>Override Global Variable With Local Variable</h1>
+
+<div class="container">
+  <h2>The statue of library</h2>
+  <p>The Statue of Liberty, arguably one of New York City’s most iconic symbols, is a popular tourist attraction for first-time visitors to the city. This 150-foot monument was gifted to the United States from France in order to celebrate 100 years of America’s independence. The statue is located on Liberty Island, and it is accessible by taking a ferry from either Battery Park in New York City or Liberty State Park in Jersey City.</p>
+    <button class="b">Yes</button>
+    <button class="b">No</button>
+  </p>
+</div>
+
+<h1>New Local Variable</h1>
+
+<div class="container">
+  <h2>The statue of library</h2>
+  <p>The Statue of Liberty, arguably one of New York City’s most iconic symbols, is a popular tourist attraction for first-time visitors to the city. This 150-foot monument was gifted to the United States from France in order to celebrate 100 years of America’s independence. The statue is located on Liberty Island, and it is accessible by taking a ferry from either Battery Park in New York City or Liberty State Park in Jersey City.</p>
+    <button class="c">Yes</button>
+    <button class="c">No</button>
+  </p>
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

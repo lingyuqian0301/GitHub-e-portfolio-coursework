@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Sets</title>
+</head>
+<body>
+
+<h1>JS Sets</h1>
+<p>A JavaScript Set is a collection of unique values.</p>
+
+<p id="demo"></p>
+
+<script>
+const letters = new Set(["a", "b", "c"]);
+letters.add("d");
+
+document.getElementById("demo").innerHTML = 
+    "Size: " + letters.size + "<br>" +
+    "Values: " + Array.from(letters).join(", ");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

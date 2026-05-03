@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON HTML</title>
+</head>
+<body>
+
+<h1>JSON HTML</h1>
+<p>JSON data can be used to populate HTML elements.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+let obj = JSON.parse(text);
+let html = "<table border='1'>";
+for (let i = 0; i < obj.employees.length; i++) {
+    html += "<tr><td>" + obj.employees[i].firstName + "</td><td>" + obj.employees[i].lastName + "</td></tr>";
+}
+html += "</table>";
+
+document.getElementById("demo").innerHTML = html;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

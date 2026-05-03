@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+#div1 {
+  position: absolute;
+  left: 50px;
+  width: calc(100% - 100px);
+  border: 4px solid blue;
+  background-color: yellowgreen;
+  padding: 8px;
+}
+
+#div2 {
+  background-color: yellow;
+  height: 120px;
+  width: max(50%, 300px);
+}
+
+#div3 {
+  background-color: lightskyblue;
+  height: 110px;
+  width: min(50%, 300px);
+}
+</style>
+</head>
+<body>
+
+<h1>The calc() Function</h1>
+
+<p>Create a div that stretches across the window, with a 50px gap between both sides of the div and the edges of the window:</p>
+
+<div id="div1">Some text here...</div>
+
+<h1>The max() Function</h1>
+
+<p>Use max() to set the width of #div1 to whichever value is largest, 50% or 300px:</p>
+
+<div id="div2">Some text here thx...</div>
+
+<p>Resize the browser window to see the effect.</p>
+
+<h1>The min() Function</h1>
+
+<p>Use min() to set the width of #div1 to whichever value is smallest, 50% or 300px:</p>
+
+<div id="div3">Some text here...</div>
+
+<p>Resize the browser window to see the effect.</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

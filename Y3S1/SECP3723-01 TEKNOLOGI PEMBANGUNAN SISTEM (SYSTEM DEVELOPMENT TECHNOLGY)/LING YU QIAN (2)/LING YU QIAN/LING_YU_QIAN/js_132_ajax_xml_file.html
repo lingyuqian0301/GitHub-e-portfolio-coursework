@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX XML File</title>
+</head>
+<body>
+
+<h1>AJAX XML File</h1>
+<p>AJAX can be used to fetch XML files and display the data.</p>
+
+<p id="demo"></p>
+
+<button type="button" onclick="loadXMLDoc()">Get XML data</button>
+
+<script>
+function loadXMLDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        const xmlDoc = this.responseXML;
+        const x = xmlDoc.getElementsByTagName("title");
+        let txt = "";
+        for (let i = 0; i < x.length; i++) {
+            txt += x[i].childNodes[0].nodeValue + "<br>";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+    xhttp.open("GET", "books.xml", true);
+    xhttp.send();
+}
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+h1.a {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2.a {
+  font-size: 1.875em; /* 30px/16=1.875em */
+ }
+
+p.a {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+
+body {
+  font-size: 100%;
+}
+
+h1.b {
+  font-size: 2.3em;
+}
+
+h2.b {
+  font-size: 1.575em;
+}
+
+p.b {
+  font-size: 0.675em;
+}
+</style>
+</head>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<h1 class="a">This is heading 1</h1>
+<h2 class="a">This is heading 2</h2>
+<p class="a">This is a paragraph.</p>
+<p class="a">Specifying the font-size in em allows all major browsers to resize the text.
+Unfortunately, there is still a problem with older versions of IE. When resizing the text, it becomes larger/smaller than it should.</p>
+
+<h1 class="b">This is heading 1</h1>
+<h2 class="b">This is heading 2</h2>
+<p class="b">This is a paragraph.</p>
+<p class="b">Specifying the font-size in percent and em displays the same size in all major browsers, and allows all browsers to resize the text!</p>
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+
+<p style="font-size:25vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:15vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

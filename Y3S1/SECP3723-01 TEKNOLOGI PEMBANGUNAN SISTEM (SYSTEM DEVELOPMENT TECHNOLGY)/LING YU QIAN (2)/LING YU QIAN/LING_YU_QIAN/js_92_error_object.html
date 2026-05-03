@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Error Object</title>
+</head>
+<body>
+
+<h1>JS Error Object</h1>
+<p>The JavaScript Error object provides error information when an error occurs.</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+    adddlert("Welcome guest!");
+} catch(err) {
+    document.getElementById("demo").innerHTML = 
+        "Error name: " + err.name + "<br>" +
+        "Error message: " + err.message + "<br>" +
+        "Error stack: " + err.stack.substring(0, 100) + "...";
+}
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

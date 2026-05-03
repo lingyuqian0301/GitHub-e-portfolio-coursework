@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX XMLHttp</title>
+</head>
+<body>
+
+<h1>AJAX XMLHttp</h1>
+<p>The XMLHttpRequest object is used to exchange data with a server.</p>
+
+<p id="demo"></p>
+
+<button type="button" onclick="loadDoc()">Request data</button>
+
+<script>
+function loadDoc() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        document.getElementById("demo").innerHTML = this.responseText;
+    }
+    xhttp.open("GET", "demo_get.asp", true);
+    xhttp.send();
+}
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

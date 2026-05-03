@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+.mask1 {
+  -webkit-mask-image: url(images/w3logo.png);
+  mask-image: url(images/w3logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+
+.mask2 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+
+p.one {
+  font-size: 18px;
+  padding: 22px;
+  color: white;
+}
+.mask3 {
+  max-width: 600px;
+  height: 350px;
+  overflow-y: scroll;
+  background: url(https://cdn.thenudge.com/wp-content/uploads/2022/09/skyline.png) no-repeat;
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient (black, transparent);
+}
+
+.mask4 {
+  -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+
+<h3>An image with a mask layer image:</h3>
+<div class="mask1">
+<img src="https://news.melbourne.vic.gov.au/wp-content/uploads/2023/05/DJI_0192-HDR_edit-landscape-1000.jpg" alt="City" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="https://news.melbourne.vic.gov.au/wp-content/uploads/2023/05/DJI_0192-HDR_edit-landscape-1000.jpg" alt="City" width="600" height="400">
+
+<h1>The mask-image Property</h1>
+
+<h3>A linear gradient as a mask layer:</h3>
+<div class="mask2">
+<img src="https://cbx57v6vu4bo.wpcdn.shift8cdn.com/wp-content/uploads/2023/01/the-london-eye-2-640x360-1-1068x561.jpg" alt="London" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="https://cbx57v6vu4bo.wpcdn.shift8cdn.com/wp-content/uploads/2023/01/the-london-eye-2-640x360-1-1068x561.jpg" alt="London" width="600" height="400">
+
+<h1>The mask-image Property</h1>
+
+<h3>A linear gradient as a mask layer:</h3>
+
+<div class="mask3">
+<p class="one">With that said, most Americans, instead of honoring St. Valentine through religious ceremony, enjoy the holiday by engaging in "romantic" behavior with their significant other or someone who they wish to be their significant other; gifts, special dinners, and other acknowledgements of affection comprise most individuals' Valentine's Day celebrations.</p>
+</div>
+
+<h1>The mask-image Property</h1>
+
+<h3>A radial gradient as a mask layer (a circle):</h3>
+<div class="mask4">
+<img src="https://lp-cms-production.imgix.net/2021-08/GettyRF_595500583.jpg?auto=format&q=75&w=1920" alt="Cinque Terre" width="600" height="400">
+</div>
+
+<h3>Original image:</h3>
+<img src="https://lp-cms-production.imgix.net/2021-08/GettyRF_595500583.jpg?auto=format&q=75&w=1920" alt="Cinque Terre" width="600" height="400">
+
+<h1>The mask-image Property</h1>
+
+<h3>An SVG mask layer (formed as a star):</h3>
+<svg width="650" height="450">
+  <mask id="svgmask2">
+    <polygon fill="#ffffff" points="100,10 40,198 190,78 10,78 160,198"></polygon>
+  </mask>
+  <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cinque_Terre_%28Italy%2C_October_2020%29_-_11_%2850543748322%29.jpg/1200px-Cinque_Terre_%28Italy%2C_October_2020%29_-_11_%2850543748322%29.jpg" mask="url(#svgmask2)"></image>
+</svg>
+
+<h3>Original image:</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cinque_Terre_%28Italy%2C_October_2020%29_-_11_%2850543748322%29.jpg/1200px-Cinque_Terre_%28Italy%2C_October_2020%29_-_11_%2850543748322%29.jpg" alt="Cinque Terre" width="600" height="350">
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

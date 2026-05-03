@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fName">First name:</label><br>
+  <input type="text" id="fName" name="fName" value="Yu Qian"><br>
+  <label for="lName">Last name:</label><br>
+  <input type="text" id="lName" name="lName" value="Ling"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<h2>Text Input Fields</h2>
+
+<form>
+  <label for="matric">Matric No:</label><br>
+  <input type="text" id="matric" name="matric" value=" "><br>
+  <label for="code">Course Code:</label><br>
+  <input type="text" id="code" name="code" value=" ">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of text input fields is 20 characters.</p>
+
+<h2>Radio Buttons</h2>
+
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="php" name="fav_language" value="PHP">
+  <label for="php">PHP</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bus">
+  <label for="vehicle1"> I mobile via bus</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Motor">
+  <label for="vehicle2"> I mobile via motor</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Bicycle">
+  <label for="vehicle3"> I mobile via bicycle</label><br><br>
+  <input type="submit" value="Enter">
+</form>
+
+<h2>HTML Forms with Submit</h2>
+
+<form action="/action_page.php">
+  <label for="fName">First name:</label><br>
+  <input type="text" id="fName" name="fName" value="Yu Qian"><br>
+  <label for="lName">Last name:</label><br>
+  <input type="text" id="lName" name="lName" value="Ling"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<h2>The name Attribute</h2>
+
+<form action="/action_page.php">
+  <label for="matric">Matric No:</label><br>
+  <input type="text" id="matric" value=" "><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

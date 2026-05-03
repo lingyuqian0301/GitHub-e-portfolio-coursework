@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web History API</title>
+</head>
+<body>
+
+<h1>Web History API</h1>
+<p>The History API provides access to the browser's session history.</p>
+
+<button onclick="goBack()">Go Back</button>
+<button onclick="goForward()">Go Forward</button>
+
+<p id="demo"></p>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+
+function goForward() {
+    window.history.forward();
+}
+
+document.getElementById("demo").innerHTML = 
+    "History length: " + window.history.length;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

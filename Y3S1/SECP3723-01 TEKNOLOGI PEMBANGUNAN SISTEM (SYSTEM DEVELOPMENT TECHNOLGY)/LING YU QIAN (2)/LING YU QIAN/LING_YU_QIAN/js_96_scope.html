@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Scope</title>
+</head>
+<body>
+
+<h1>JS Scope</h1>
+<p>Scope determines the accessibility of variables, objects, and functions from different parts of the code.</p>
+
+<p id="demo"></p>
+
+<script>
+// Global scope
+let globalVar = "I am global";
+
+function myFunction() {
+    // Local scope
+    let localVar = "I am local";
+    return globalVar + " and " + localVar;
+}
+
+document.getElementById("demo").innerHTML = myFunction();
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

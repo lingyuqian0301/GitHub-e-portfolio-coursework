@@ -1,0 +1,53 @@
+1) Introduction:
+
+OBJECT ORIENTED PROGRAMMING (SECJ2154)  
+MINI PROJECT: BAKERY ORDERING SYSTEM  
+Group G5  
+CHEW CHIU XIAN  |  A23CS0061  
+SYARIFAH DANIA  |  A23CS0183  
+LING YU QIAN    |  A23CS0301  
+Lecturer: Dr. Zuraini Binti Ali Shah  
+
+2) Introduction for our project:
+
+Our project is a digital bakery ordering system. It allows users to log in, view bakery items such as cakes, breads, pastries, and drinks, place orders, and complete payments. Admins can view users and orders. This system was built fully using Java and OOP concepts.
+
+3) Problems Solved:
+
+- Manual bakery ordering is inefficient.
+- No proper way to track users or previous orders.
+- Cash-only payments and no way to manage menus digitally.
+
+
+4) Key Features:
+
+| Feature               | Description                                         |
+| --------------------- | --------------------------------------------------- |
+| **Login/Register**    | Authenticated user system, with roles (User/Admin). |
+| **Role-Based Menus**  | Admins can view users/orders. Users can shop.       |
+| **Cart and Checkout** | Real-time cart with quantity & special requests.    |
+| **File Handling**     | Data saved to `users.txt` and `orders.txt`.         |
+| **GUI**               | Implemented using `JOptionPane` (Swing-based GUI).  |
+
+5) Java Concept used:
+
+| OOP Concept        | In Your Code                                                       |
+| ------------------ | ------------------------------------------------------------------ |
+| **Class & Object** | `User`, `Order`, `FoodItem`, etc.                                  |
+| **Encapsulation**  | Private fields with `get/set` methods.                             |
+| **Inheritance**    | Not applied directly but roles are modeled with enums.             |
+| **Polymorphism**   | Overloaded methods (`toString()`, etc).                            |
+| **Abstraction**    | Logical separation via helper classes like `AuthenticationSystem`. |
+
+6) Demo code
+
+7) Possible QnA questions:
+
+| Question                       | Suggested Answer                                                |
+| ------------------------------ | --------------------------------------------------------------- |
+| What file operations are used? | `Files.write()` and `Files.readAllLines()` from `java.nio.file` |
+| Why use `JOptionPane`?         | For a quick GUI-based interface without HTML or JavaFX          |
+| How did you use enums?         | For `UserRole`, `FoodType`, `PaymentMethod`, and `AllergyTag`   |
+| Is the system scalable?        | Yes, new food items or payment methods can be added easily.     |
+| Any Exception Handling?        | Yes – custom `EmptyCartException` is used in payment flow.      |
+

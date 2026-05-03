@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Grab W3Schools Topic Examples</title>
+<style>
+body { font: 14px/1.5 system-ui, Arial, sans-serif; max-width: 800px; margin: 24px auto; }
+input[type=text] { width: 100%; padding: 8px; }
+button { padding: 8px 12px; margin-top: 8px; }
+pre { background: #f6f8fa; padding: 8px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h2>Grab W3Schools Topic Examples</h2>
+<p>Enter a W3Schools HTML topic URL (e.g. https://www.w3schools.com/html/html_classes.asp). This will fetch every Try it example, build filenames as html_NN_title.html, and save directly into this folder.</p>
+<input id="topicUrl" type="text" placeholder="https://www.w3schools.com/html/html_classes.asp">
+<button id="runBtn">Fetch and Save</button>
+<pre id="log"></pre>
+
+<script>
+const log = (msg) => { document.getElementById('log').textContent += msg + '\n'; };
+const unescapeHtml = (s) => s.replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&');
+
+async function fetchText(url) {
+	const res = await fetch(url, { credentials: 'omit' });
+	if (!res.ok) throw new Error('HTTP ' + res.status);
+	return await res.text();
+}
+
+function extractTryitLinks(topicHtml, topicUrl) {
+	const re = /href="([^"]*tryit\\.asp\\?filename=[^"]+)"/ig;
+	const out = [];
+	let m;
+	while ((m = re.exec(topicHtml)) !== null) {
+		let href = m[1];
+		try { href = new URL(href, topicUrl).href; } catch {}
+		if (!out.includes(href)) out.push(href);
+	}
+	return out;
+}
+
+function codeFromTryit(tryHtml) {
+	let m = tryHtml.match(/<textarea[^>]*id=['"]textareaCode['"][^>]*>([\\s\\S]*?)<\\/textarea>/i);
+	if (m) return m[1];
+	let m2 = tryHtml.match(/<div[^>]*class=['"][^'"]*w3-code[^'"]*['"][^>]*>([\\s\\S]*?)<\\/div>/i);
+	if (m2) return unescapeHtml(m2[1]);
+	return '';
+}
+
+function wrapAndLink(code, title) {
+	const hasDoc = /^\\s*<!DOCTYPE|<html/i.test(code);
+	let html = hasDoc ? code : `<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>${title}</title></head>
+<body>
+
+${code}
+
+</body>
+</html>`;
+	if (!/Main Page<\\/a>/.test(html)) {
+		html = html.replace(/<\\/body>/i, '\\n<br><br><a href="index.html">Main Page</a>\\n</body>');
+	}
+	return html;
+}
+
+async function saveFile(title, html) {
+	const res = await fetch('save_tryit.php', {
+		method: 'POST',
+		headers: { 'Content-Type': 'application/json' },
+		body: JSON.stringify({ title, code: html })
+	});
+	const j = await res.json().catch(() => ({}));
+	if (!j.ok) throw new Error(j.error || 'Save failed');
+	return j.saved;
+}
+
+function titleFromFilenameParam(url) {
+	const m = url.match(/[?&]filename=tryhtml_([^&]+)/i);
+	if (!m) return 'example';
+	return m[1].replace(/[^a-z0-9_\\-]+/ig, '_');
+}
+
+document.getElementById('runBtn').addEventListener('click', async () => {
+	const topicUrl = document.getElementById('topicUrl').value.trim();
+	if (!topicUrl) { alert('Enter topic URL'); return; }
+	log('Fetching topic: ' + topicUrl);
+	try {
+		const topicHtml = await fetchText(topicUrl);
+		const links = extractTryitLinks(topicHtml, topicUrl);
+		log('Found ' + links.length + ' tryit link(s).');
+		let count = 0;
+		for (const link of links) {
+			try {
+				const th = await fetchText(link);
+				const code = codeFromTryit(th);
+				if (!code) { log('No code: ' + link); continue; }
+				const title = titleFromFilenameParam(link);
+				const html = wrapAndLink(code, title);
+				const saved = await saveFile(title, html);
+				log('Saved: ' + saved);
+				count++;
+			} catch (e) {
+				log('Failed: ' + link + ' -> ' + e.message);
+			}
+			await new Promise(r => setTimeout(r, 200));
+		}
+		log('Done. Saved ' + count + ' file(s).');
+	} catch (e) {
+		log('Error: ' + e.message);
+	}
+});
+</script>
+</body>
+</html>
+
+
+

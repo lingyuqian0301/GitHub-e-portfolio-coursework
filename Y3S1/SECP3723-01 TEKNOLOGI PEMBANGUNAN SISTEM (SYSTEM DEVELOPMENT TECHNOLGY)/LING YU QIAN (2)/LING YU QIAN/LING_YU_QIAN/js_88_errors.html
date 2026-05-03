@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Errors</title>
+</head>
+<body>
+
+<h1>JS Errors</h1>
+<p>When JavaScript code is executed, different errors can occur.</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+    adddlert("Welcome guest!");
+} catch(err) {
+    document.getElementById("demo").innerHTML = 
+        "Error name: " + err.name + "<br>" +
+        "Error message: " + err.message;
+}
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

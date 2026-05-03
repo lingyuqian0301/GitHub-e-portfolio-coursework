@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+img.a {
+  width:210px;
+  height:310px;
+}
+
+img.b {
+  width: 210px;
+  height: 310px;
+  object-fit: cover;
+}
+
+img.c {
+  width: 210px;
+  height: 310px;
+  object-fit: contain;
+}
+
+img.d {
+  width: 210px;
+  height: 310px;
+  object-fit: fill;
+}
+
+img.e {
+  width: 210px;
+  height: 310px;
+  object-fit: none;
+}
+
+img.f {
+  width: 210px;
+  height: 310px;
+  object-fit: scale-down;
+}
+
+.fill {object-fit: fill;}
+.contain {object-fit: contain;}
+.cover {object-fit: cover;}
+.scale-down {object-fit: scale-down;}
+.none {object-fit: none;}
+</style>
+</head>
+<body>
+
+<h2>Image</h2>
+<img class="a" src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Paris" width="400" height="300">
+
+<h2>Using object-fit: cover</h2>
+
+<img class="b" src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=mediumhttps://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Paris" width="400" height="300">
+
+<h2>Using object-fit: contain</h2>
+
+<img class="c" src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Paris" width="400" height="300">
+
+<h2>Using object-fit: fill</h2>
+
+<img class="d" src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Paris" width="400" height="300">
+
+<h2>Using object-fit: none</h2>
+<img class="e" src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Paris" width="400" height="300">
+
+<h2>Using object-fit: scale-down</h2>
+<img class="f" src="https://a.cdn-hotels.com/gdcs/production107/d625/d22d2448-0238-4573-b055-6b079e972dbb.jpg?impolicy=fcrop&w=800&h=533&q=medium" alt="Paris" width="400" height="300">
+
+<h1>The object-fit Property</h1>
+
+<h2>No object-fit:</h2>
+<img src="https://www.cia-france.com/media/1803/paris-louvre_1100x700.jpeg" alt="Paris" style="width:200px;height:300px">
+
+<h2>object-fit: fill (this is default):</h2>
+<img class="fill" src="https://www.cia-france.com/media/1803/paris-louvre_1100x700.jpeg" alt="Paris" style="width:200px;height:300px">
+
+<h2>object-fit: contain:</h2>
+<img class="contain" src="https://www.cia-france.com/media/1803/paris-louvre_1100x700.jpeg" alt="Paris" style="width:200px;height:300px">
+
+<h2>object-fit: cover:</h2>
+<img class="cover" src="https://www.cia-france.com/media/1803/paris-louvre_1100x700.jpeg" alt="Paris" style="width:200px;height:300px">
+
+<h2>object-fit: scale-down:</h2>
+<img class="scale-down" src="https://www.cia-france.com/media/1803/paris-louvre_1100x700.jpeg" alt="Paris" style="width:200px;height:300px">
+
+<h2>object-fit: none:</h2>
+<img class="none" src="https://www.cia-france.com/media/1803/paris-louvre_1100x700.jpeg" alt="Paris" style="width:200px;height:300px">
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+span.a {
+  display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid blue;  
+  background-color: yellowgreen; 
+}
+
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  border: 2px solid blue;    
+  background-color: yellowgreen; 
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 8px;
+  border: 1px solid blue;    
+  background-color: yellowgreen; 
+}
+
+.nav {
+  background-color: lightyellow; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 24px;
+  padding: 24px;
+}
+</style>
+</head>
+<body>
+
+<h1>The display Property</h1>
+
+<h2>display: inline</h2>
+<div>George is at the pet store, looking at what kind of pet he might want to get for his birthday. George asked if he could have a horse, but his parents said no because horses are too big. <span class="a">The</span> <span class="a">pet store. </span> First, he sees dogs and cats. Baby dogs are called puppies. Baby cats are called kittens. George likes them because they are easy to take care of and can play a lot, but they will get bigger. George wants a small pet.</div>
+
+<h2>display: inline-block</h2>
+<div>George is at the pet store, looking at what kind of pet he might want to get for his birthday. George asked if he could have a horse, but his parents said no because horses are too big. <span class="b">The</span> <span class="b">pet store</span> First, he sees dogs and cats. Baby dogs are called puppies. Baby cats are called kittens. George likes them because they are easy to take care of and can play a lot, but they will get bigger. George wants a small pet. </div>
+
+<h2>display: block</h2>
+<div>George is at the pet store, looking at what kind of pet he might want to get for his birthday. George asked if he could have a horse, but his parents said no because horses are too big. <span class="c">The</span> <span class="c">pet store</span> First, he sees dogs and cats. Baby dogs are called puppies. Baby cats are called kittens. George likes them because they are easy to take care of and can play a lot, but they will get bigger. George wants a small pet. </div>
+
+<h1>Horizontal Navigation Links</h1>
+<p>By default, list items are displayed vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+<p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+<ul class="nav">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#gallery">Gallery</a></li>  
+  <li><a href="#find">Find Us</a></li>
+</ul>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

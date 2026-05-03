@@ -1,0 +1,127 @@
+[2026-01-15 10:26:38] To: 000yuqian@gmail.com | Subject: Course Registration Confirmed: SECI1013 | Message: Dear Ling Yu Qian,
+
+You have successfully registered for SECI1013 (Section 1).
+
+Regards,
+SMS Admin
+[2026-01-15 10:32:41] To: 000yuqian@gmail.com | Subject: Course Registration Confirmed: SECI1013 | Message: Dear Ling Yu Qian,
+
+You have successfully registered for SECI1013 (Section 1).
+
+Regards,
+SMS Admin
+[2026-01-15 10:33:03] To: 000yuqian@gmail.com | Subject: Course Registration Confirmed: SECJ2013 | Message: Dear Ling Yu Qian,
+
+You have successfully registered for SECJ2013 (Section 1).
+
+Regards,
+SMS Admin
+[2026-01-16 06:16:01] To: 000yuqian@gmail.com | Subject: Course Registration Confirmed: SECD2523 | Message: Dear Ling Yu Qian,
+
+You have successfully registered for SECD2523 (Section 2).
+
+Regards,
+SMS Admin
+[2026-01-16 08:17:26] To: 000yuan@gmail.com | Subject: Course Registration Confirmed: SECI1013 | Message: Dear Ling Yu An,
+
+You have successfully registered for SECI1013 (Section 2).
+
+Regards,
+SMS Admin
+[2026-01-16 11:24:12] To: yqling29@gmail.com | Subject: Welcome to SMS System | Message: Dear Tan Yu Qian,
+
+Thank you for registering with the Student Management System.
+Your account has been created successfully.
+
+Regards,
+SMS Admin
+[2026-01-16 11:52:31] To: yqling29@gmail.com | Subject: Course Registration Confirmed: SECC3613 | Message: Dear Tan Yu Qian,
+
+You have successfully registered for SECC3613 (Section 2).
+
+Regards,
+SMS Admin
+[2026-01-16 11:52:41] To: yqling29@gmail.com | Subject: Course Registration Confirmed: SECD2523 | Message: Dear Tan Yu Qian,
+
+You have successfully registered for SECD2523 (Section 3).
+
+Regards,
+SMS Admin
+[2026-01-16 11:52:55] To: yqling29@gmail.com | Subject: Course Registration Confirmed: SECI1013 | Message: Dear Tan Yu Qian,
+
+You have successfully registered for SECI1013 (Section 1).
+
+Regards,
+SMS Admin
+[2026-01-23 15:11:59] To: 000yuqian@gmail.com | Subject: Test Email from SMS System | Message: This is a test email sent from your SMS System at 2026-01-23 15:11:59...
+[2026-01-23 15:11:59] Status: ✓ Sent via SMTP
+[2026-01-23 15:43:44] To: yqling29@gmail.com | Subject: Course Registration Approved - SECJ1013 | Message: ## Course Registration Approved
+
+Dear Tan Yu Qian,
+
+Great news! Your course registration has been **APPROVED**.
+
+### Cou...
+[2026-01-23 15:43:44] Status: ✓ Sent via SMTP
+[2026-01-23 15:45:11] To: yqling29@gmail.com | Subject: Course Registration Approved - SECP2013 | Message: ## Course Registration Approved
+
+Dear Tan Yu Qian,
+
+Great news! Your course registration has been **APPROVED**.
+
+### Cou...
+[2026-01-23 15:45:11] Status: ✓ Sent via SMTP
+[2026-01-23 15:51:25] To: yqling29@gmail.com | Subject: Course Registration Approved - SECP3133 | Message: ## Course Registration Approved
+
+Dear Tan Yu Qian,
+
+Great news! Your course registration has been **APPROVED**.
+
+### Cou...
+[2026-01-23 15:51:25] Status: ✓ Sent via SMTP
+[2026-01-23 16:01:32] To: yqling29@gmail.com | Subject: Course Registration Approved - SECD2523 | Message: ## Course Registration Approved
+
+Dear Tan Yu Qian,
+
+Great news! Your course registration has been **APPROVED**.
+
+### Cou...
+[2026-01-23 16:01:32] Status: ✓ Sent via SMTP
+[2026-01-23 16:08:06] To: yqling29@gmail.com | Subject: TEST - Email System Working - 16:08:06 | Message: # Email System Test
+
+If you receive this email, the SMS email system is working correctly.
+
+**Test sent at:** 2026-01-23...
+[2026-01-23 16:08:06] Status: ✓ Sent via SMTP
+[2026-01-23 16:44:05] To: yqling29@gmail.com | Subject: TEST - Email System Working - 16:44:05 | Message: # Email System Test
+
+If you receive this email, the SMS email system is working correctly.
+
+**Test sent at:** 2026-01-23...
+[2026-01-23 16:44:14] To: yqling29@gmail.com | Subject: TEST - Email System Working - 16:44:14 | Message: # Email System Test
+
+If you receive this email, the SMS email system is working correctly.
+
+**Test sent at:** 2026-01-23...
+[2026-01-23 16:44:05] Status: ✗ Failed to send via SMTP - Check internet connection and Gmail credentials
+[2026-01-23 16:44:14] Status: ✗ Failed to send via SMTP - Check internet connection and Gmail credentials
+[2026-01-23 16:45:53] To: yqling29@gmail.com | Subject: TEST - Email System Working - 16:45:53 | Message: # Email System Test
+
+If you receive this email, the SMS email system is working correctly.
+
+**Test sent at:** 2026-01-23...
+[2026-01-23 16:45:53] Status: ✓ Sent via SMTP
+[2026-01-23 16:46:21] To: yqling29@gmail.com | Subject: TEST - Email System Working - 16:46:21 | Message: # Email System Test
+
+If you receive this email, the SMS email system is working correctly.
+
+**Test sent at:** 2026-01-23...
+[2026-01-23 16:46:21] Status: ✓ Sent via SMTP
+[2026-01-23 16:47:34] To: yqling29@gmail.com | Subject: Course Registration Approved - SECC3613 | Message: ## Course Registration Approved
+
+Dear Tan Yu Qian,
+
+Great news! Your course registration has been **APPROVED**.
+
+### Cou...
+[2026-01-23 16:47:34] Status: ✓ Sent via SMTP

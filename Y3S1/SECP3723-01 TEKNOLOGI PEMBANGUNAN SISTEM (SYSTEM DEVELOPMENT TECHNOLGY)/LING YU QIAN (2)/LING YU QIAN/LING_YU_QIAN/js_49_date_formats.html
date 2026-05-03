@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Date Formats</title>
+</head>
+<body>
+
+<h1>JS Date Formats</h1>
+<p>JavaScript can display dates in different formats.</p>
+
+<p id="demo"></p>
+
+<script>
+const d1 = new Date("2023-03-25");
+const d2 = new Date("03/25/2023");
+const d3 = new Date("March 25, 2023");
+
+document.getElementById("demo").innerHTML = 
+    "ISO format: " + d1 + "<br>" +
+    "Short format: " + d2 + "<br>" +
+    "Long format: " + d3;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

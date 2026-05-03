@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Validation API</title>
+</head>
+<body>
+
+<h1>Web Validation API</h1>
+<p>The Constraint Validation API provides methods for validating form inputs.</p>
+
+<form id="myForm">
+    <input type="text" id="username" required>
+    <input type="submit" value="Submit">
+</form>
+
+<p id="demo"></p>
+
+<script>
+let form = document.getElementById("myForm");
+let input = document.getElementById("username");
+
+form.addEventListener("submit", function(e) {
+    if (!input.validity.valid) {
+        e.preventDefault();
+        document.getElementById("demo").innerHTML = "Input is invalid";
+    } else {
+        document.getElementById("demo").innerHTML = "Input is valid";
+    }
+});
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

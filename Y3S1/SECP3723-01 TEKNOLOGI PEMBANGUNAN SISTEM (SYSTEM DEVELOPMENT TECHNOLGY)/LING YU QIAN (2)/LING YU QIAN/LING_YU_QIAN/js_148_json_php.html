@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON PHP</title>
+</head>
+<body>
+
+<h1>JSON PHP</h1>
+<p>PHP can be used to return JSON data.</p>
+
+<p id="demo"></p>
+
+<script>
+fetch('demo_json.php')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("demo").innerHTML = 
+            "Name: " + data.name + "<br>" +
+            "Age: " + data.age;
+    })
+    .catch(error => {
+        document.getElementById("demo").innerHTML = "Error loading JSON from PHP";
+    });
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

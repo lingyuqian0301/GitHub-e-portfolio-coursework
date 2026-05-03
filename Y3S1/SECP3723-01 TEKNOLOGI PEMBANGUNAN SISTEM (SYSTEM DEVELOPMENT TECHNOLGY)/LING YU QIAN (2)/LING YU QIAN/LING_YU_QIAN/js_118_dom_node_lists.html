@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Node Lists</title>
+</head>
+<body>
+
+<h1>DOM Node Lists</h1>
+<p>A NodeList is an array-like collection of nodes.</p>
+
+<p>Item 1</p>
+<p>Item 2</p>
+<p>Item 3</p>
+
+<p id="demo"></p>
+
+<script>
+let myNodeList = document.querySelectorAll("p");
+document.getElementById("demo").innerHTML = 
+    "Number of nodes: " + myNodeList.length;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

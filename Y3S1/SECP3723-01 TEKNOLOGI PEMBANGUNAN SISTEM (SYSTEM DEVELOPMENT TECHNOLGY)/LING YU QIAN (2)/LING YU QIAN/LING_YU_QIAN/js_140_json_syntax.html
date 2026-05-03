@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Syntax</title>
+</head>
+<body>
+
+<h1>JSON Syntax</h1>
+<p>JSON syntax is derived from JavaScript object notation syntax.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"name":"John", "age":30, "city":"New York"}';
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+    "Name: " + obj.name + "<br>" +
+    "Age: " + obj.age + "<br>" +
+    "City: " + obj.city;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Arrays</title>
+</head>
+<body>
+
+<h1>JSON Arrays</h1>
+<p>JSON arrays are written inside square brackets. Arrays can contain objects.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+    obj.employees[0].firstName + " " + obj.employees[0].lastName + "<br>" +
+    obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

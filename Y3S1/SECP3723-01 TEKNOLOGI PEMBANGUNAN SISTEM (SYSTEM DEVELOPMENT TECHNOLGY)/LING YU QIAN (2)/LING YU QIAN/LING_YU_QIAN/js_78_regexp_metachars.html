@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Metachars</title>
+</head>
+<body>
+
+<h1>JS RegExp Metachars</h1>
+<p>Metacharacters are characters with a special meaning in regular expressions.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "That's hot!";
+let pattern1 = /./g;
+let pattern2 = /\w/g;
+let pattern3 = /\d/g;
+
+document.getElementById("demo").innerHTML = 
+    "Text: " + text + "<br>" +
+    ". (any char): " + text.match(pattern1).slice(0, 5).join("") + "...<br>" +
+    "\\w (word char): " + text.match(pattern2).join("") + "<br>" +
+    "\\d (digit): " + (text.match(pattern3) || "none");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

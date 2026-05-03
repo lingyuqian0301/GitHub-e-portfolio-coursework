@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Set Reference</title>
+</head>
+<body>
+
+<h1>JS Set Reference</h1>
+<p>JavaScript Set methods reference.</p>
+
+<p id="demo"></p>
+
+<script>
+const mySet = new Set(["a", "b", "c"]);
+
+document.getElementById("demo").innerHTML = 
+    "Size: " + mySet.size + "<br>" +
+    "Has 'a': " + mySet.has("a") + "<br>" +
+    "Values: " + Array.from(mySet).join(", ");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

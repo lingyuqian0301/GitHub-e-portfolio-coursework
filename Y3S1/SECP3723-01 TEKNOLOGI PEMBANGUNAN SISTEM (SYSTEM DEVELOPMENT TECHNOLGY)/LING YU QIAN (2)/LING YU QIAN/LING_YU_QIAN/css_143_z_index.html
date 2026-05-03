@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -2;
+}
+
+.container {
+  position: relative;
+}
+
+.black-box {
+  position: relative;
+  z-index: 1;
+  border: 4px solid black;
+  height: 90px;
+  margin: 35px;
+}
+
+.gray-box {
+  position: absolute;
+  z-index: 4; /* gray box will be above both green and black box */
+  background: lightgray;
+  height: 80px;  
+  width: 70%;
+  left: 50px;
+  top: 60px;
+}
+
+.green-box {
+  position: absolute;
+  z-index: 1; /* green box will be above black box */
+  background: lightgreen;
+  width: 38%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+
+.container2 {
+  position: relative;
+}
+
+.black-box2 {
+  position: relative;
+  border: 4px solid red;
+  height: 90px;
+  margin: 35px;
+}
+
+.gray-box2 {
+  position: absolute;
+  background: dimgray;
+  height: 80px;  
+  width: 70%;
+  left: 50px;
+  top: 60px;
+}
+
+.green-box2 {
+  position: absolute;
+  background: greenyellow;
+  width: 38%;
+  left: 270px;
+  top: -15px;
+  height: 100px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<img src="https://static.vecteezy.com/system/resources/thumbnails/008/058/793/small/abstract-blur-with-bokeh-light-for-background-usage-vector.jpg">
+<p>Because the image has a z-index of -2, it will be placed behind the text.</p>
+
+<h1>Z-index Example</h1>
+
+<p>An element with greater stack order is always above an element with a lower stack order.</p>
+
+<div class="container">
+  <div class="black-box">Black box (z-index: 1)</div>
+  <div class="gray-box">Gray box (z-index: 4)</div>
+  <div class="green-box">Green box (z-index: 1)</div>
+</div>
+
+<h1>Overlapping elements</h1>
+
+<p>If two positioned elements overlap each other without a z-index specified,
+the element defined last in the HTML code will be shown on top:</p>
+
+<div class="container2">
+  <div class="black-box2">Black box</div>
+  <div class="gray-box2">Gray box</div>
+  <div class="green-box2">Green box</div>
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

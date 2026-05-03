@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Methods</title>
+</head>
+<body>
+
+<h1>Object Methods</h1>
+<p>Methods are actions that can be performed on objects.</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

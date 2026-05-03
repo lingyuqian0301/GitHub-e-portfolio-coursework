@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Variables and JavaScript</title>
+  <style>
+    :root{--main:#4CAF50}
+    body{font-family:Arial,Helvetica,sans-serif;padding:20px}
+    .box{padding:12px;background:var(--main);color:#fff;border-radius:6px}
+  </style>
+  <script>
+    function setAccent(color){document.documentElement.style.setProperty('--main', color)}
+  </script>
+</head>
+<body>
+
+<h1>Variables and JavaScript</h1>
+<div class="box">This box uses a CSS variable controlled by JS.</div>
+<p><button onclick="setAccent('#ff6b6b')">Red</button> <button onclick="setAccent('#4CAF50')">Green</button></p>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>

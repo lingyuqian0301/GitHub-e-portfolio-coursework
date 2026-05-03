@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Object Display</title>
+</head>
+<body>
+
+<h1>Object Display</h1>
+<p>There are different ways to display JavaScript objects.</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+let text = "";
+for (let x in person) {
+    text += person[x] + " ";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

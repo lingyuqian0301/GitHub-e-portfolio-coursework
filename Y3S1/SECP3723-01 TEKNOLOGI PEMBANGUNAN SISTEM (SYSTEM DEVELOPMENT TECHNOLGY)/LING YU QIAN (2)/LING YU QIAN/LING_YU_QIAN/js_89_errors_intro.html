@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Errors Intro</title>
+</head>
+<body>
+
+<h1>JS Errors Intro</h1>
+<p>Errors can be coding errors made by the programmer, errors due to wrong input, or other unforeseeable things.</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+    let x = y + 1;  // y is not defined
+} catch(err) {
+    document.getElementById("demo").innerHTML = 
+        "Error caught: " + err.message;
+}
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

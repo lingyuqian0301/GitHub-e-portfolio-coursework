@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Map Reference</title>
+</head>
+<body>
+
+<h1>JS Map Reference</h1>
+<p>JavaScript Map methods reference.</p>
+
+<p id="demo"></p>
+
+<script>
+const myMap = new Map([
+    ["a", 1],
+    ["b", 2],
+    ["c", 3]
+]);
+
+document.getElementById("demo").innerHTML = 
+    "Size: " + myMap.size + "<br>" +
+    "Get 'a': " + myMap.get("a") + "<br>" +
+    "Has 'b': " + myMap.has("b");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

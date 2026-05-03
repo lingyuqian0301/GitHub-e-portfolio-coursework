@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Events</title>
+</head>
+<body>
+
+<h1>DOM Events</h1>
+<p>HTML DOM allows JavaScript to react to HTML events.</p>
+
+<button id="myBtn">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").onclick = function() {
+    document.getElementById("demo").innerHTML = "Button clicked!";
+};
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

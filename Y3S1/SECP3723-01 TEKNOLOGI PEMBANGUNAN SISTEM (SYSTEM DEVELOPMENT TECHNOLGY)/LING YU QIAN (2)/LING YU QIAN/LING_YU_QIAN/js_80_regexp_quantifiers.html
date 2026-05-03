@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Quantifiers</title>
+</head>
+<body>
+
+<h1>JS RegExp Quantifiers</h1>
+<p>Quantifiers define quantities of characters or expressions to match.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Hellooo World! Hello!";
+let pattern1 = /o+/g;
+let pattern2 = /o*/g;
+let pattern3 = /o?/g;
+
+document.getElementById("demo").innerHTML = 
+    "Text: " + text + "<br>" +
+    "o+ (one or more): " + text.match(pattern1) + "<br>" +
+    "o* (zero or more): " + text.match(pattern2).slice(0, 5).join("") + "...<br>" +
+    "o? (zero or one): " + text.match(pattern3).slice(0, 5).join("") + "...";
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

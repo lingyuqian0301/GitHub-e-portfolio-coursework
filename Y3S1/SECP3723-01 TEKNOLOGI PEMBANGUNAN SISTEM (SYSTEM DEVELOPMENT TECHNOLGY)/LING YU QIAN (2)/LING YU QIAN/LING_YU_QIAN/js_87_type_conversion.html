@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Type Conversion</title>
+</head>
+<body>
+
+<h1>JS Type Conversion</h1>
+<p>JavaScript variables can be converted to a new variable and another data type.</p>
+
+<p id="demo"></p>
+
+<script>
+// Number to String
+let num = 123;
+let str = String(num);
+
+// String to Number
+let str2 = "456";
+let num2 = Number(str2);
+
+// Boolean to String
+let bool = true;
+let str3 = String(bool);
+
+document.getElementById("demo").innerHTML = 
+    "Number to String: " + typeof(str) + " " + str + "<br>" +
+    "String to Number: " + typeof(num2) + " " + num2 + "<br>" +
+    "Boolean to String: " + typeof(str3) + " " + str3;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

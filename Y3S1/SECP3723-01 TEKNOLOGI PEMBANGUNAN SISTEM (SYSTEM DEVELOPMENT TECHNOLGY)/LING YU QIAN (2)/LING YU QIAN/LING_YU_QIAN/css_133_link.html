@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+a.one {
+  color: darkviolet;
+}
+
+/* unvisited link */
+.e a:link {
+  color: darkviolet;
+}
+
+/* visited link */
+.e a:visited {
+  color: darkgreen;
+}
+
+/* mouse over link */
+.e a:hover {
+  color: lightyellow;
+}
+
+/* selected link */
+.e a:active {
+  color: yellowgreen;
+}
+
+.b a:link {
+  text-decoration: none;
+}
+
+.b a:visited {
+  text-decoration: none;
+}
+
+.b a:hover {
+  text-decoration: underline;
+}
+
+.b a:active {
+  text-decoration: underline;
+}
+
+.c a:link {
+  background-color: lightblue;
+}
+
+.c a:visited {
+  background-color: maroon;
+}
+
+.c a:hover {
+  background-color: lightpink;
+}
+
+.c a:active {
+  background-color: darkmagenta;
+}
+
+.d a:link, .d a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.d a:hover, .d a:active {
+  background-color: navy;
+}
+</style>
+</head>
+<body>
+
+<h2>Style a link with a color</h2>
+
+<p><b><a href="https://www.freecodecamp.org/" class="one" target="_blank">Press me</a></b></p>
+
+<h2>Styling a link depending on state</h2>
+
+<p><b><a class="e" href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+<h2>Styling a link with text-decoration property</h2>
+
+<p><b><a href="https://www.kaggle.com/" target="_blank" class="b">Link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+<h2>Styling a link with background-color property</h2>
+
+<p><b><a class="c" href="https://www.w3schools.com/css/css_list.asp" target="_blank">Press this link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+<h2>Link Button</h2>
+
+<p>A link styled as a button:</p>
+<a href="https://www.pexels.com/search/mobile%20wallpaper/" target="_blank" class="d">This is a link</a>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

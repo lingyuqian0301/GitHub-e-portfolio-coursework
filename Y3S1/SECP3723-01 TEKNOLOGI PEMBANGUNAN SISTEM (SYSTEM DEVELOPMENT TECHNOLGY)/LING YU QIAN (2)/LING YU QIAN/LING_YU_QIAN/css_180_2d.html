@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style> 
+div.a {
+  width: 330px;
+  height: 110px;
+  background-color: lightpink;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+}
+div.b {
+  width: 300px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+div#myDiv {
+  transform: rotate(20deg);
+}
+
+div.c {
+  margin: 150px;
+  width: 210px;
+  height: 120px;
+  background-color: lightyellow;
+  border: 1px solid black;
+  transform: scale(0.5,0.5);
+}
+
+div.d {
+  margin: 150px;
+  width: 220px;
+  height: 105px;
+  background-color: yellow;
+  border: 5px solid red;
+  transform: scaleX(2);
+}
+
+div.e {
+  margin: 140px;
+  width: 200px;
+  height: 150px;
+  background-color: lightblue;
+  border: 1px solid black;
+  transform: scaleY(0.5);
+}
+
+div.f {
+  width: 300px;
+  height: 100px;
+  background-color: turquoise;
+  border: 1px solid orangered;
+}
+
+div#myDiv2 {
+  transform: skew(20deg,10deg);
+}
+
+div.g {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+div#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#myDiv2 {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+</style>
+</head>
+<body>
+
+<h1>The translate() Method</h1>
+<p>The translate() method moves an element from its current position:</p>
+
+<div class="a">
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+<h1>The rotate() Method</h1>
+
+<p>The rotate() method rotates an element clockwise or counter-clockwise.</p>
+
+<div class="b">
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is rotated clockwise 20 degrees.
+</div>
+
+<h1>The scale() Method</h1>
+
+<p>The scale() method increases or decreases the size of an element.</p>
+
+<div class="c">
+This div element is decreased to be half of its original width and height.
+</div>
+
+<h1>The scaleX() Method</h1>
+
+<p>The scaleX() method increases or decreases the width of an element.</p>
+
+<div class="d">
+This div element is two times of its original width.
+</div>
+
+<h1>The scaleY() Method</h1>
+
+<p>The scaleY() method increases or decreases the height of an element.</p>
+
+<div class="e">
+This div element is half of its original height.
+</div>
+
+<h1>The skew() Method</h1>
+<p>The skew() method skews an element into a given angle.</p>
+
+<div class="f">
+This a normal div element.
+</div>
+
+<div id="myDiv2">
+This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+
+<h1>The matrix() Method</h1>
+
+<p>The matrix() method combines all the 2D transform methods into one.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv1">
+Using the matrix() method.
+</div>
+
+<div id="myDiv2">
+Another use of the matrix() method.
+</div>
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

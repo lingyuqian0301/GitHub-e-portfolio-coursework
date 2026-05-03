@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Assertions</title>
+</head>
+<body>
+
+<h1>JS RegExp Assertions</h1>
+<p>Assertions include boundaries, which indicate the beginnings and endings of lines and words.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Hello world hello";
+let pattern1 = /^Hello/g;
+let pattern2 = /world$/g;
+let pattern3 = /\bworld\b/g;
+
+document.getElementById("demo").innerHTML = 
+    "Text: " + text + "<br>" +
+    "^Hello: " + (text.match(pattern1) ? "Match" : "No match") + "<br>" +
+    "world$: " + (text.match(pattern2) ? "Match" : "No match") + "<br>" +
+    "\\bworld\\b: " + (text.match(pattern3) ? "Match" : "No match");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

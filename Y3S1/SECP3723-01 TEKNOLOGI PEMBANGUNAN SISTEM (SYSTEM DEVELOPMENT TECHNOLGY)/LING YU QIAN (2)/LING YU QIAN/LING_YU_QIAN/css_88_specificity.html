@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Specificity</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:20px}
+    p{color:blue}
+    .special p{color:green}
+    #idExample p{color:red}
+  </style>
+</head>
+<body>
+
+<h1>CSS Specificity</h1>
+<p>Specificity rules determine which CSS wins: IDs &gt; classes &gt; elements.</p>
+<div><p>Element selector (blue)</p></div>
+<div class="special"><p>Class selector (green)</p></div>
+<div id="idExample"><p>ID selector (red)</p></div>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>

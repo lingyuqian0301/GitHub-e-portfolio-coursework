@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS object-fit</title>
+  <style>
+    .box{width:200px;height:120px;border:1px solid #ddd;overflow:hidden}
+    .box img{width:100%;height:100%}
+    .cover img{object-fit:cover}
+    .contain img{object-fit:contain;background:#f7f7f7}
+    body{font-family:Arial,Helvetica,sans-serif;padding:20px}
+  </style>
+</head>
+<body>
+
+<h1>CSS object-fit</h1>
+<div class="box cover"><img src="images/pic_trulli.jpg" alt="cover"></div>
+<div class="box contain" style="margin-top:8px"><img src="images/pic_trulli.jpg" alt="contain"></div>
+<p><code>object-fit</code> controls how replaced content like images fill their box.</p>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>

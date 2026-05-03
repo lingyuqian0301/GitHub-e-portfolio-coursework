@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Collections</title>
+</head>
+<body>
+
+<h1>DOM Collections</h1>
+<p>A collection is an array-like list of HTML elements.</p>
+
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>
+
+<p id="demo"></p>
+
+<script>
+let myCollection = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = 
+    "Number of paragraphs: " + myCollection.length;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style> 
+#example1 {
+  background-image: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=2000), url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 25px;
+}
+
+#example2 {
+  background: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=2000) right bottom no-repeat, url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg) left top repeat;
+  padding: 10px;
+}
+
+#example3 {
+  border: 1px solid black;
+  background: url(https://www.w3schools.com/css/img_flwr.gif);
+  background-size: 100px 80px;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+#example4 {
+  border: 1px solid black;
+  background: url(https://www.w3schools.com/css/img_flwr.gif);
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+
+.div1 {
+  border: 1px solid black;
+  height: 120px;
+  width: 160px;
+  background: url(https://www.w3schools.com/css/img_flwr.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.div2 {
+  border: 1px solid black;
+  height: 120px;
+  width: 160px;
+  background: url(https://www.w3schools.com/css/img_flwr.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.div3 {
+  border: 1px solid black;
+  height: 120px;
+  width: 160px;
+  background: url(https://www.w3schools.com/css/img_flwr.gif);
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+
+<h1>Multiple Backgrounds</h1>
+<p>The following div element has two background images:</p>
+
+<div id="example1">
+  <h1>Numbers</h1>
+  <p>Most individuals don't think about numbers, or numerical representations of quantity, but they play a major part in everyday life. To be sure, numbers determine the time individuals will wake up in the morning, how much money employees earn per hour, what day of the year it is, and much, much more.</p>
+</div>
+
+<div id="example2">
+  <h1>Numbers</h1>
+  <p>Additionally, numbers impact everyday living on a much smaller scale. In the grocery store, for instance, numbers determine products' prices, the amount of a product available for purchase, how much money will need to be paid for products, and a whole lot else.</p>
+</div>
+
+<h1>The background-size Property</h1>
+
+<p>Resized background-image:</p>
+<div id="example3">
+  <h2>Numbers</h2>
+  <p>Additionally, numbers impact everyday living on a much smaller scale. In the grocery store, for instance, numbers determine products' prices, the amount of a product available for purchase, how much money will need to be paid for products, and a whole lot else.</p>
+</div>
+
+<p>Original size of the background-image:</p>
+<div id="example4">
+  <h2>Numbers</h2>
+  <p>Additionally, numbers impact everyday living on a much smaller scale. In the grocery store, for instance, numbers determine products' prices, the amount of a product available for purchase, how much money will need to be paid for products, and a whole lot else.</p>
+</div>
+
+<h1>The background-size Property</h1>
+
+<h2>background-size: contain:</h2>
+<div class="div1">
+<p>Ling Yu Qian.</p>
+</div>
+
+<h2>background-size: cover:</h2>
+<div class="div2">
+<p>Ling Yu Qian.</p>
+</div>
+
+<h2>No background-size defined:</h2>
+<div class="div3">
+<p>Ling Yu Qian.</p>
+</div>
+
+<p>Original image:</p>
+<img src="https://www.w3schools.com/css/img_flwr.gif" alt="The flowers" width="230" height="168">
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

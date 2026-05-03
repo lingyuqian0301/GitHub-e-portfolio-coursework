@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Typed Reference</title>
+</head>
+<body>
+
+<h1>JS Typed Reference</h1>
+<p>JavaScript typed array reference.</p>
+
+<p id="demo"></p>
+
+<script>
+const buffer = new ArrayBuffer(8);
+const view = new Int32Array(buffer);
+
+view[0] = 100;
+view[1] = 200;
+
+document.getElementById("demo").innerHTML = 
+    "view[0]: " + view[0] + "<br>" +
+    "view[1]: " + view[1] + "<br>" +
+    "Length: " + view.length;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

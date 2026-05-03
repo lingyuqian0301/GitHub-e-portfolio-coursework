@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Animations</title>
+</head>
+<body>
+
+<h1>DOM Animations</h1>
+<p>JavaScript can be used to create animations.</p>
+
+<div id="container" style="width:100px;height:100px;background-color:red;position:relative;"></div>
+
+<p id="demo"></p>
+
+<script>
+let pos = 0;
+function move() {
+    let elem = document.getElementById("container");
+    pos += 2;
+    elem.style.left = pos + "px";
+    if (pos < 200) {
+        setTimeout(move, 10);
+    }
+}
+document.getElementById("demo").innerHTML = "Click the red box to animate";
+document.getElementById("container").onclick = move;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

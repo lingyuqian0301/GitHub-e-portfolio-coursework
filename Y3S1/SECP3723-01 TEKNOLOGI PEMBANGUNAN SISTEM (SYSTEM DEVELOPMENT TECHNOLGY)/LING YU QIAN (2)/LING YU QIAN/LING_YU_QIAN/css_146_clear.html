@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+.div1 {
+  float: left;
+  padding: 20px;
+  border: 4px solid #73AD21;
+}
+
+.div2 {
+  padding: 13px;
+  border: 3px solid red;
+}
+
+.div3 {
+  float: left;
+  padding: 18px;  
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  padding: 12px;
+  border: 2px solid darkorange;
+  clear: left;
+}
+
+.div5 {
+  border: 3px solid lightgoldenrodyellow;
+  padding: 8px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix {
+  overflow: auto;
+  border: 3px solid lightgoldenrodyellow;
+  padding: 8px;
+}
+
+.div6 {
+  border: 5px solid #4CAF50;
+  padding: 15px;
+}
+
+.img3 {
+  float: right;
+}
+
+.img4 {
+  float: left;
+}
+
+.clearfix2 {
+  border: 5px solid #4CAF50;
+  padding: 15px;
+}
+
+.clearfix2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Without clear</h2>
+<div class="div1">div1</div>
+<div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+<br><br>
+
+<h2>With clear</h2>
+<div class="div3">div3</div>
+<div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+
+<h2>Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div class="div5">
+  <img class="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/JfBohol7038naturefvf_39.JPG/330px-JfBohol7038naturefvf_39.JPG" alt="Coconut" width="170" height="170">
+  The coconut tree provides food, fuel, cosmetics, folk medicine and building materials, among many other uses. The inner flesh of the mature seed, as well as the coconut milk extracted from it, form a regular part of the diets of many people in the tropics and subtropics. Coconuts are distinct from other fruits because their endosperm contains a large quantity of clear liquid, called "coconut water" or "coconut juice".
+</div>
+
+<h2 style="clear:right">With Clearfix</h2>
+<p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
+
+<div class="clearfix">
+  <img class="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/JfBohol7038naturefvf_39.JPG/330px-JfBohol7038naturefvf_39.JPG" alt="Coconut" width="170" height="170">
+  The coconut tree provides food, fuel, cosmetics, folk medicine and building materials, among many other uses. The inner flesh of the mature seed, as well as the coconut milk extracted from it, form a regular part of the diets of many people in the tropics and subtropics. Coconuts are distinct from other fruits because their endosperm contains a large quantity of clear liquid, called "coconut water" or "coconut juice".
+</div>
+
+<h2>Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div class="div6">
+  <img class="img3" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="190" height="190">
+  Pineapples grow as a small shrub; the individual flowers of the unpollinated plant fuse to form a multiple fruit. The plant normally propagates from the offset produced at the top of the fruit[2][5] or from a side shoot, and typically matures within a year.
+</div>
+
+<h2 style="clear:right">With New Modern Clearfix</h2>
+<p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+<div class="clearfix2">
+  <img class="img4" src="https://www.w3schools.com/css/pineapple.jpg" alt="Pineapple" width="190" height="190">
+  Pineapples grow as a small shrub; the individual flowers of the unpollinated plant fuse to form a multiple fruit. The plant normally propagates from the offset produced at the top of the fruit[2][5] or from a side shoot, and typically matures within a year.
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

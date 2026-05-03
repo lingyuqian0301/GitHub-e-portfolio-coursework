@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>HTML Head ELement</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Ling">
+  <link rel="stylesheet" href="styles1.css">
+  <style>
+    body {background-color: lightyellow;}
+    h1 {color: red;}
+    p {color: gray;}
+  </style>
+  <script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello HTML Javascript!";
+  }
+  </script>
+  <base href="https://www.w3schools.com/" target="_blank">
+</head>
+<body>
+
+<h1>HTML Head Element</h1>
+
+<p>The content of the body element is displayed in the browser window.</p>
+<p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+
+<p>All meta information goes inside the head section.</p>
+
+<h1>My Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Click it</button>
+
+<h1>The base element</h1>
+
+<p><img src="images/stickman.gif" width="24" height="39" alt="Stickman"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+
+<p><a href="tags/tag_base.asp">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+a[target] {
+  background-color: greenyellow;
+}
+
+a.ex[target="_blank"] {
+  background-color: yellow;
+}
+
+[title~="flower"] {
+  border: 5px solid blue;
+}
+
+[class$="test"] {
+  background: lightblue;
+}
+
+[class*="de"] {
+  background: lightpink;
+}
+
+input[type="text"] {
+  width: 155px;
+  display: block;
+  margin-bottom: 12px;
+  background-color: yellow;
+}
+
+input[type="button"] {
+  width: 125px;
+  margin-left: 32px;
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS [attribute] Selector</h2>
+<p>The links with a target attribute gets a yellow background:</p>
+
+<a href="https://www.w3schools.com">w3schools.com</a>
+<a href="http://www.disney.com" target="_blank">disney.com</a>
+<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<h2>CSS [attribute="value"] Selector</h2>
+<p>The link with target="_blank" gets a yellow background:</p>
+
+<a class="ex" href="https://www.w3schools.com">w3schools.com</a>
+<a class="ex" href="http://www.disney.com" target="_blank">disney.com</a>
+<a class="ex" href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+<h2>CSS [attribute~="value"] Selector</h2>
+<p>All images with the title attribute containing the word "flower" get a yellow border.</p>
+
+<img src="https://i.pinimg.com/originals/60/ac/75/60ac75a998703653e5ecfaec3e022ecc.jpg" title="rose flower" width="150" height="113">
+<img src="https://s3-eu-west-1.amazonaws.com/blog-ecotree/blog/0001/01/ad46dbb447cd0e9a6aeecd64cc2bd332b0cbcb79.jpeg" title="tree" width="200" height="358">
+
+<h2>CSS [attribute$="value"] Selector</h2>
+
+<div class="first_test">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-test">The third div element.</div>
+<p class="mytest">This is some text in a paragraph.</p>
+
+<h2>CSS [attribute*="value"] Selector</h2>
+
+<div class="first_dest">The first div element.</div>
+<div class="second">The second div element.</div>
+<div class="my-dest">The third div element.</div>
+<p class="mydest">This is some text in a paragraph.</p>
+
+<h2>Styling Forms</h2>
+
+<form name="input" action="" method="get">
+  Firstname:<input type="text" name="Name" value="Ling" size="20">
+  Lastname:<input type="text" name="Name" value="Chin" size="20">
+  <input type="button" value="Enter">
+</form>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

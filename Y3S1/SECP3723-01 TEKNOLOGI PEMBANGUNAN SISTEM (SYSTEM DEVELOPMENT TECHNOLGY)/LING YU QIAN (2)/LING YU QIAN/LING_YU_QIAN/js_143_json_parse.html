@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Parse</title>
+</head>
+<body>
+
+<h1>JSON Parse</h1>
+<p>The <code>JSON.parse()</code> method parses a JSON string and returns a JavaScript object.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"name":"John", "age":30, "city":"New York"}';
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+    obj.name + ", " + obj.age + ", " + obj.city;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

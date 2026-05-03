@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h2>My First JS Web Page</h2>
+<p>My First Paragraph.</p>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1").innerHTML = 6 + 2;
+</script>
+
+<h2>My Second JS Web Page</h2>
+<p>My first paragraph.</p>
+
+<p>Never call document.write after the document has finished loading.
+It will overwrite the whole document.</p>
+
+<script>
+document.write(4 + 6);
+</script>
+
+<h2>My Third JS Web Page</h2>
+<p>My first paragraph.</p>
+
+<script>
+window.alert(2 + 3);
+</script>
+
+<h2>The window.print() Method</h2>
+
+<p>Click the button to print the current page.</p>
+
+<button onclick="window.print()">Print the content of this page</button>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html> 

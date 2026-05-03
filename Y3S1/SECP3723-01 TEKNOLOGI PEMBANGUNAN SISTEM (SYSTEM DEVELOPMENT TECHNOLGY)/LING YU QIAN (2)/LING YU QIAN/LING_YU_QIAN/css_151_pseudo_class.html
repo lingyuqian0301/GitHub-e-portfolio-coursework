@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+/* unvisited link */
+a.one:link {
+  color: orangered;
+}
+
+/* visited link */
+a.one:visited {
+  color: green;
+}
+
+/* mouse over link */
+a.one:hover {
+  color: navy;
+}
+
+/* selected link */
+a.one:active {
+  color: blue;
+}
+
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 28px;
+}
+
+div.three {
+  background-color: navy;
+  color: white;
+  padding: 28px;
+  text-align: center;
+}
+
+div.three:hover {
+  background-color: lightskyblue;
+}
+
+p.two {
+  display: none;
+  background-color: yellow;
+  padding: 30px;
+}
+
+div.two:hover p {
+  display: block;
+}
+
+p.four:first-child {
+  color: purple;
+}
+
+p.five i:first-child {
+  color: pink;
+}
+
+p.six:first-child i {
+  color: greenyellow;
+}
+
+q:lang(no) {
+  quotes: "~" "~";
+}
+</style>
+</head>
+<body>
+
+<h2>Styling a link depending on state</h2>
+
+<p><b><a class="one" href="https://lingua.com/english/reading/hotel-reservation/" target="_blank">Hotel resservation</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+<h2>Pseudo-classes and HTML Classes</h2>
+
+<p>When you hover over the first link below, it will change color and font size:</p>
+
+<p><a class="highlight" href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+<p><a href="https://www.w3schools.com/css/">CSS Tutorial</a></p>
+
+<p>Mouse over the div element below to change its background color:</p>
+
+<div class="three">Pointer hover Me</div>
+
+<div class="two">Hover over this div element to show the p element
+  <p class="two">Tada! Here I am! Hehe!</p>
+</div>
+
+<p class="four">This is some text.</p>
+<p class="four">This is some text.</p>
+
+<div>
+  <p class="four">This is some text.</p>
+  <p class="four">This is some text.</p>
+</div>
+
+<p class="five">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p class="five">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+<p class="six">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p class="six">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+<div>
+  <p class="six">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  <p class="six">I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+</div>
+
+<p>Prepared by experienced English teachers, the texts, articles and conversations are brief and appropriate to your level of proficiency. <q lang="no">Good luck!</q> Take the multiple-choice quiz following each text, and you'll get the results immediately. You will feel both challenged and accomplished! You can even download (as PDF) and print the texts and exercises. It's enjoyable, fun and free.</p>
+<p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

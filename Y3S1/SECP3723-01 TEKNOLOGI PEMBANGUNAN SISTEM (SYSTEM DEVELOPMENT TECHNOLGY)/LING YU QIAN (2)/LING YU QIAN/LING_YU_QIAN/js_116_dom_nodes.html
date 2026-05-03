@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Nodes</title>
+</head>
+<body>
+
+<h1>DOM Nodes</h1>
+<p>According to the W3C HTML DOM standard, everything in an HTML document is a node.</p>
+
+<p id="demo"></p>
+
+<script>
+let para = document.createElement("p");
+let node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+document.getElementById("demo").innerHTML = "New paragraph created";
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

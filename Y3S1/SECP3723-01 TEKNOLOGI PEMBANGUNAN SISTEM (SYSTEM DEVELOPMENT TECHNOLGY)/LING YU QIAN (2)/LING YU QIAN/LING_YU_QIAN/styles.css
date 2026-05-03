@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 45px;
+}
+
+body h1 {
+  color: blue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFD3D3D3;
+}
+
+.topnav a {
+  float: left;
+  color: #357EC7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #357EC7;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: #216AB3;
+  color: white;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 85px;
+}
+
+#html a {
+  padding: 5px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 2;
+  color: black;
+  max-width: 50px;
+}
+
+#html a:link,
+a:visited,
+a:focus {
+  background: palegoldenrod;
+  color: black;
+}
+
+#html a:hover {
+  background: orange;
+}
+
+#html a:active {
+  background: darkred;
+  color: white;
+}
+
+#css a:link,
+a:visited,
+a:focus {
+  background: lightblue;
+  color: black;
+}
+
+#css a:hover {
+  background: blue;
+  color: white;
+}
+
+#css a:active {
+  background: navy;
+  color: white;
+}
+
+#css a {
+  padding: 5px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 2;
+  color: black;
+  max-width: 50px;
+}
+
+#php a:link,
+a:visited,
+a:focus {
+  background: lightgreen;
+  color: black;
+}
+
+#php a:hover {
+  background: green;
+  color: white;
+}
+
+#php a:active {
+  background: darkgreen;
+  color: white;
+}
+
+#php a {
+  padding: 5px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 2;
+  color: black;
+  max-width: 50px;
+}
+
+#bootstrap a:link,
+a:visited,
+a:focus {
+  background: pink;
+  color: black;
+}
+
+#bootstrap a:hover {
+  background: hotpink;
+  color: white;
+}
+
+#bootstrap a:active {
+  background: magenta;
+  color: white;
+}
+
+#bootstrap a {
+  padding: 5px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 2;
+  color: black;
+  max-width: 50px;
+}
+
+#js a:link,
+a:visited,
+a:focus {
+  background: lightyellow;
+  color: black;
+}
+
+#js a:hover {
+  background: yellowgreen;
+  color: white;
+}
+
+#js a:active {
+  background: yellow;
+  color: white;
+}
+
+#js a {
+  padding: 5px;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 2;
+  color: black;
+  max-width: 50px;
+}

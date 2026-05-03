@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+img.a {
+  border-radius: 12px;
+}
+
+img.b {
+  border: 3px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  width: 150px;
+}
+
+img.b:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+img.c {
+  max-width: 90%;
+  height: auto;
+}
+
+img.d {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 28px;
+}
+
+div.container {
+  text-align: center;
+  padding: 15px 25px;
+}
+
+.blur {filter: blur(4px); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.brightness {filter: brightness(250%); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.contrast {filter: contrast(180%); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.grayscale {filter: grayscale(100%); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.huerotate {filter: hue-rotate(180deg); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.invert {filter: invert(100%); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.opacity {filter: opacity(50%); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.saturate {filter: saturate(7); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.sepia {filter: sepia(100%); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+.shadow {filter: drop-shadow(8px 8px 10px green); width: 35%;
+  height: auto;
+  float: left; 
+  max-width: 238px;}
+
+.container1 {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container1:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+img.one:hover {
+  transform: scaleX(-1);
+}
+</style>
+</head>
+<body>
+
+<h2>Rounded Image</h2>
+
+<p>Use the border-radius property to create rounded images:</p>
+
+<img class="a" src="https://media.cntraveler.com/photos/63e6b44a71cc5230e7788d4f/1:1/w_3571,h_3571,c_limit/Paris_GettyImages-601762971.jpg" alt="Paris" width="300" height="300">
+
+<h2>Thumbnail Image as Link</h2>
+
+<p>Use the border property to create thumbnail images. Wrap an anchor around the image to use it as a link.</p>
+<p>Hover over the image and click on it to see the effect.</p>
+
+<a target="_blank" href="https://media.cntraveler.com/photos/63e6b44a71cc5230e7788d4f/1:1/w_3571,h_3571,c_limit/Paris_GettyImages-601762971.jpg">
+  <img class="b" src="https://media.cntraveler.com/photos/63e6b44a71cc5230e7788d4f/1:1/w_3571,h_3571,c_limit/Paris_GettyImages-601762971.jpg" alt="Paris" style="width:150px">
+</a>
+
+<h2>Responsive Image</h2>
+
+<p>Responsive images will automatically adjust to fit the size of the screen.</p>
+<p>Resize the browser window to see the effect:</p>
+
+<img class="c" src="https://lp-cms-production.imgix.net/features/2015/12/Riomaggiore_cs.jpg?auto=format&w=1440&h=810&fit=crop&q=75" alt="Cinque Terre" width="1000" height="300">
+
+<h2>Center an Image</h2>
+
+<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+<img class="d" src="https://images.unsplash.com/photo-1564594736624-def7a10ab047?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Paris" style="width:50%">
+
+<h2>Responsive Polaroid Images / Cards</h2>
+
+<div class="polaroid">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/1200px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg" alt="NYC" style="width:100%">
+  <div class="container">
+  <p>NYC</p>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="https://res.cloudinary.com/icelandtours/image/upload/v1667309946/northern_lights_above_glacier_lagoon_v2osk_unsplash_7d39ca647f.jpg" alt="Norther Lights" style="width:100%">
+  <div class="container">
+  <p>Northern Lights</p>
+  </div>
+</div>
+
+<h2>Image Filters</h2>
+
+<p><strong>Note:</strong> The filter property is not supported in Internet Explorer or Edge 12.</p>
+
+<img src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="blur" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="brightness" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="contrast" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="grayscale" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="huerotate" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="invert" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="opacity" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="saturate" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="sepia" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="shadow" src="images/pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+<br>
+<h2>Fade in Overlay</h2>
+
+<div class="container1">
+  <img src="images/workplace.jpg" alt="Workplace" class="image1">
+  <div class="overlay1">
+    <div class="text1">Hello World!</div>
+  </div>
+</div>
+
+<h2>Flip an Image</h2>
+<p>Move your mouse over the image.</p>
+
+<img class="one" src="https://www.thetrainline.com/cms/media/1360/france-eiffel-tower-paris.jpg?mode=crop&width=1080&height=1080&quality=70" alt="Paris" width="400" height="300">
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

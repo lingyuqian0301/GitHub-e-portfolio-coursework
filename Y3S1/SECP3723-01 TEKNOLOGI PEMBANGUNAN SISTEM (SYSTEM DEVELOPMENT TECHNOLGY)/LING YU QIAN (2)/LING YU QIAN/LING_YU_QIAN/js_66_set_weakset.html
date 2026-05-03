@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Set WeakSet</title>
+</head>
+<body>
+
+<h1>JS Set WeakSet</h1>
+<p>A WeakSet is a collection of objects. Unlike Set, WeakSet can only contain objects.</p>
+
+<p id="demo"></p>
+
+<script>
+const weakSet = new WeakSet();
+const obj1 = {};
+const obj2 = {};
+
+weakSet.add(obj1);
+weakSet.add(obj2);
+
+document.getElementById("demo").innerHTML = 
+    "WeakSet has obj1: " + weakSet.has(obj1) + "<br>" +
+    "WeakSet has obj2: " + weakSet.has(obj2);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

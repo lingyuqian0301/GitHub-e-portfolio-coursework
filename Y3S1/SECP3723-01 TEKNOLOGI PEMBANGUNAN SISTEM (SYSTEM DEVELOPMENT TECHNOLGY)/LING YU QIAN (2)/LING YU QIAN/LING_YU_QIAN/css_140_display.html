@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+li {
+  display: inline;
+}
+
+span.a {
+  display: block;
+}
+
+a.b {
+  display: block;
+}
+
+h1.hidden {
+  display: none;
+}
+
+h1.hide {
+  visibility: hidden;
+}
+</style>
+</head>
+<body>
+
+<p>Display a list of links as a horizontal menu:</p>
+
+<ul>
+  <li><a href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a></li>
+  <li><a href="https://www.kaggle.com/" target="_blank">Kaggle</a></li>
+  <li><a href="https://github.com/topics/dataset" target="_blank">GitHub Data Set</a></li>
+</ul>
+
+<h1>Display span elements as block:</h1>
+
+<span class="a">A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span elements.</span>
+
+<h1>Display links as block elements</h1>
+
+<a class="b" href="https://www.freecodecamp.org/" target="_blank">Free Code Camp</a>
+<a class="b" href="https://www.kaggle.com/" target="_blank">Kaggle</a>
+<a class="b" href="https://github.com/topics/dataset" target="_blank">GitHub Data Set</a>
+
+<h1>Visible heading</h1>
+<h1 class="hidden">Invisible heading</h1>
+<p>Notice that the h1 element with display: none; does not take up any space!</p>
+
+<h1>Visible heading</h1>
+<h1 class="hide">Hidden heading</h1>
+<p>Notice that the hidden heading still takes up space.</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

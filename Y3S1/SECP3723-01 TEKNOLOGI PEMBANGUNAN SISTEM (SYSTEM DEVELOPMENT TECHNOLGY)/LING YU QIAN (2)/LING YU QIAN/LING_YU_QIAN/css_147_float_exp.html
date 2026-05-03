@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: lightyellow;
+}
+
+.header, .footer {
+  background-color: darkorange;
+  color: white;
+  padding: 18px;
+}
+
+.column {
+  float: right;
+  padding: 18px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 28%;
+}
+
+.content {
+  width: 72%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: orangered;
+  color: #ffffff;
+}
+
+.menu li:hover {
+  background-color: yellow;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>China</h1>
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li>The Flight</li>
+      <li>The Country</li>
+      <li>The Culture</li>
+      <li>The Food</li>
+    </ul>
+  </div>
+
+  <div class="column content">
+    <h1>The Country</h1>
+    <p>China, Chinese (Pinyin) Zhonghua or (Wade-Giles romanization) Chung-hua, also spelled (Pinyin) Zhongguo or (Wade-Giles romanization) Chung-kuo, officially People’s Republic of China or Chinese (Pinyin) Zhonghua Renmin Gongheguo or (Wade-Giles romanization) Chung-hua Jen-min Kung-ho-kuo, country of East Asia. It is the largest of all Asian countries. Occupying nearly the entire East Asian landmass, it covers approximately one-fourteenth of the land area of Earth, and it is almost as large as the whole of Europe. China is also one of the most populous countries in the world, rivaled only by India, which, according to United Nations estimates, surpassed it in population in 2023.</p>
+    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer Text</p>
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

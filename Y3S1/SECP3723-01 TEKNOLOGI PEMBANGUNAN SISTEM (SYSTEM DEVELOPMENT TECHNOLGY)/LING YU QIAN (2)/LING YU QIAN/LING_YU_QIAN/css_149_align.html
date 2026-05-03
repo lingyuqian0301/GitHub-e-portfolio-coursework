@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+.center {
+  margin: auto;
+  width: 70%;
+  border: 2px solid #73AD21;
+  padding: 10px;
+}
+
+.center2 {
+  text-align: center;
+  border: 3px solid sandybrown;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 320px;
+  border: 3px solid blue;
+  padding: 12px;
+}
+
+.right2 {
+  float: right;
+  width: 250px;
+  border: 4px solid greenyellow;
+  padding: 10px;
+}
+
+.center3 {
+  padding: 80px 10px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+.center4 {
+  line-height: 150px;
+  height: 150px;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.center4 p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.center5 { 
+  height: 230px;
+  position: relative;
+  border: 6px solid blue; 
+}
+
+.center5 p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  border: 3px solid orange; 
+}
+</style>
+</head>
+<body>
+
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like div), use margin: auto;</p>
+
+<div class="center">
+  <p>Hello World? Bye!</p>
+</div>
+
+<h2>Center Text</h2>
+
+<div class="center2">
+  <p>This text is centered.</p>
+</div>
+
+<h2>Center an Image</h2>
+<p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+<img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1200px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="Paris" style="width:50%">
+
+<h2>Right align with the position property</h2>
+
+<p>An example of how to right align elements with the position property:</p>
+
+<div class="right">
+  <p> A single room with no balcony will suit our needs just fine. I did notice on your website that you have a pool and an exercise room. Are these facilities available for all hotel guests?</p>
+</div>
+
+<h2>Right align with the float property</h2>
+
+<p>An example of how to right align elements with the float property:</p>
+
+<div class="right2">
+  <p> A single room with no balcony will suit our needs just fine. I did notice on your website that you have a pool and an exercise room. Are these facilities available for all hotel guests?</p>
+</div>
+
+<h2>Center with padding and text-align</h2>
+
+<p>In this example, we use padding and text-align to center the div element both vertically and horizontally:</p>
+
+<div class="center3">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<h2>Center with line-height</h2>
+
+<p>In this example, we use the line-height property with a value that is equal to the height property to center the div element:</p>
+
+<div class="center4">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<h2>Center with position and transform</h2>
+
+<p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+
+<div class="center5">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<h2>Flexbox Centering</h2>
+
+<p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
+
+<div class="center6">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

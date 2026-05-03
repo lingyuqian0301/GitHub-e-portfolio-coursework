@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Tooltips</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:20px}
+    .tip{position:relative;display:inline-block}
+    .tip .hint{visibility:hidden;background:#333;color:#fff;padding:6px;border-radius:4px;position:absolute;bottom:125%;left:50%;transform:translateX(-50%);white-space:nowrap}
+    .tip:hover .hint{visibility:visible}
+  </style>
+</head>
+<body>
+
+<h1>CSS Tooltips</h1>
+<div class="tip">Hover here<span class="hint">Tooltip text</span></div>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>

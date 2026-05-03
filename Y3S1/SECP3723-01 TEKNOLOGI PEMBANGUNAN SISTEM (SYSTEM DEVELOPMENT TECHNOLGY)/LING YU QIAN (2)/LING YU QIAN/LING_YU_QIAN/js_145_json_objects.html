@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Objects</title>
+</head>
+<body>
+
+<h1>JSON Objects</h1>
+<p>JSON objects are written inside curly braces. They can contain multiple name/value pairs.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"name":"John", "age":30, "city":"New York"}';
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+    "Name: " + obj.name + "<br>" +
+    "Age: " + obj.age + "<br>" +
+    "City: " + obj.city;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

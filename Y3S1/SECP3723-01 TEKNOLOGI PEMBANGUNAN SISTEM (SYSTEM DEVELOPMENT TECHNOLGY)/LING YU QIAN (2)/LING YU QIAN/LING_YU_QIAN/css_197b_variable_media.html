@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Variable declarations */ 
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff; 
+}
+
+.container {
+  --fontsize: 26px;
+}
+
+/* Styles */ 
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 16px;
+  font-size: var(--fontsize);
+}
+
+@media screen and (min-width: 440px) {
+  .container {
+    --fontsize: 52px;
+  }
+  :root {
+    --blue: lightblue;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Using Variables in Media Queries</h1>
+
+<div class="container">
+  <h2>Good morning</h2>
+  <p>When the browser's width is 440px or wider, set the --fontsize variable value to 52px and the --blue variable value to lightblue. Resize the browser window to see the effect.</p>
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

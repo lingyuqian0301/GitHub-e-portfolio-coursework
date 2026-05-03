@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+body {
+  background-image: url("https://images.pexels.com/photos/2088170/pexels-photo-2088170.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+div.ex1 { 
+  background-color: lightyellow;
+  border: 3px solid red;
+  padding: 15px;
+}
+
+div.ex2 { 
+  background-color: transparent;
+  border: 2px solid grey;
+  padding: 20px;
+}
+
+div.ex3 {
+  color: navy;
+  border: 8px solid currentcolor;
+  padding: 18px;  
+}
+
+div.ex4 {
+  background-color: currentcolor;
+  padding: 17px;
+}
+
+div.ex4 p {
+  color: white;
+}
+
+body {
+  color: purple;
+}
+
+div.ex5 {
+  box-shadow: 0px 0px 18px currentcolor;
+  border: 4px solid currentcolor;
+  padding: 18px;
+}
+
+div.ex6 {
+  border: 3px solid orange;
+}
+
+span.ex6 {
+  border: inherit;
+}
+</style>
+</head>
+<body>
+
+<h2>The transparent Keyword</h2>
+
+<div class="ex1">This div has a light yellow background.</div>
+<br>
+<div class="ex2">This div has a transparent background.</div>
+
+<h2>The currentcolor Keyword</h2>
+
+<p>The currentcolor keyword refers to the current value of the color property of an element.</p>
+
+<div class="ex3">
+This div element has a blue text color and a blue border.
+</div>
+
+<h2>The currentcolor Keyword</h2>
+
+<p>This is some text in the body part...</p>
+
+<div class="ex4">
+<p>This div's background color is set to the current color value of the body element.</p>
+</div>
+
+<h2>The currentcolor Keyword</h2>
+
+<p>This is some text in the body part...</p>
+
+<div class="ex5">
+<p>This div's border color and shadow color is set to the current color value of the body element.</p>
+</div>
+
+<h2>The inherit Keyword</h2>
+
+<div class="ex6">Here, the <span class="ex6">span element's</span> border settings will be inherited from the parent element.</div>
+<br>
+
+<div style="border:3px dotted red;">Here, the <span>span element's</span> border settings will also be inherited from the parent element.</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

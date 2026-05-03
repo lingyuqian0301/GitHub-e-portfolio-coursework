@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+img.a {
+  opacity: 0.3;
+}
+
+img.b {
+  opacity: 0.6;
+}
+
+img.b:hover {
+  opacity: 1.0;
+}
+
+img.c:hover {
+  opacity: 0.45;
+}
+
+div.zero {
+  background: rgb(76, 175, 80);
+  padding: 12px;
+}
+
+div.first {
+  background: rgba(76, 175, 80, 0.1);
+  padding: 12px;
+}
+
+div.second {
+  background: rgba(76, 175, 80, 0.3);
+  padding: 12px;
+}
+
+div.third {
+  background: rgba(76, 175, 80, 0.6);
+  padding: 12px;
+}
+
+div.background {
+  background: url('https://media.architecturaldigest.com/photos/5903ad5c1732ef7d3c2b9e38/4:3/w_2663,h_1997,c_limit/5%20Seaside%20Towns%20in%20Italy.jpg') repeat;
+  border: 3px solid blue;
+}
+
+div.transbox {
+  margin: 32px;
+  background-color: #ffffff;
+  border: 2px solid yellow;
+  opacity: 0.7;
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+
+<h1>Image Transparency</h1>
+<p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+<p>Image with 30% opacity:</p>
+<img class="a" src="https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg" alt="Forest" width="180" height="110">
+
+<h1>Image Transparency</h1>
+<p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+<img class="b" src="https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg" alt="Forest" width="170" height="100">
+<img class="b" src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg" alt="Mountains" width="170" height="100">
+<img class="b" src="https://cdn.britannica.com/82/195482-050-2373E635/Amalfi-Italy.jpg" alt="Italy" width="170" height="100">
+
+<h1>Image Transparency</h1>
+<p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+<img class="c" src="https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg" alt="Forest" width="170" height="100">
+<img class="c" src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?cs=srgb&dl=pexels-joyston-judah-933054.jpg&fm=jpg" alt="Mountains" width="170" height="100">
+
+<h1>Transparent Box</h1>
+<p>With opacity:</p>
+<div class="zero" style="opacity:0.1;"><p>10% opacity</p></div>
+<div class="zero" style="opacity:0.3;"><p>30% opacity</p></div>
+<div class="zero" style="opacity:0.6;"><p>60% opacity</p></div>
+<div class="zero"><p>opacity 1</p></div>
+
+<p>With RGBA color values:</p>
+<div class="first"><p>10% opacity</p></div>
+<div class="second"><p>30% opacity</p></div>
+<div class="third"><p>60% opacity</p></div>
+<div><p>default</p></div>
+
+<p>Notice how the text gets transparent as well as the background color when using the opacity property.</p>
+
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

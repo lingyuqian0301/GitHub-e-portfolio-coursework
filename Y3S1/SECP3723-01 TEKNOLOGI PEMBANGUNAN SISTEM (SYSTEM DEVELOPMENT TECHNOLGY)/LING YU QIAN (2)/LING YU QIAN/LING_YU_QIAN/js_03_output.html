@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Output</title>
+</head>
+<body>
+
+<h1>JS Output</h1>
+<p>JavaScript can display data in different ways:</p>
+
+<h2>Writing into an HTML element</h2>
+<p id="demo1"></p>
+
+<h2>Writing into the HTML output</h2>
+<script>
+document.write("This is written using document.write()");
+</script>
+
+<h2>Writing into an alert box</h2>
+<button onclick="window.alert('Hello! I am an alert box!')">Click me for alert</button>
+
+<h2>Writing into the browser console</h2>
+<button onclick="console.log('Hello! Check the console (F12)')">Click me for console</button>
+
+<script>
+document.getElementById("demo1").innerHTML = "This is written using innerHTML";
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+

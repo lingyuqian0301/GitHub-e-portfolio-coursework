@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS If Conditions</title>
+</head>
+<body>
+
+<h1>JS If Conditions</h1>
+<p>Conditional statements are used to perform different actions based on different conditions.</p>
+
+<p id="demo"></p>
+
+<script>
+let hour = new Date().getHours();
+let greeting;
+
+if (hour < 12) {
+    greeting = "Good morning";
+} else if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON JSONP</title>
+</head>
+<body>
+
+<h1>JSON JSONP</h1>
+<p>JSONP (JSON with Padding) is a method to bypass the cross-domain policies in web browsers.</p>
+
+<p id="demo"></p>
+
+<script>
+function myCallback(data) {
+    document.getElementById("demo").innerHTML = 
+        "Name: " + data.name + "<br>" +
+        "Age: " + data.age;
+}
+
+// JSONP example (would normally load from external source)
+let jsonpData = {name: "John", age: 30};
+myCallback(jsonpData);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

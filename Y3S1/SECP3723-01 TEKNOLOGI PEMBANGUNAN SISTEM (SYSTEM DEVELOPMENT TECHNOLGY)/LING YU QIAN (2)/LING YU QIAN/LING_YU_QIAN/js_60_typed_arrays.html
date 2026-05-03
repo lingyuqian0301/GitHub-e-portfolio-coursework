@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Typed Arrays</title>
+</head>
+<body>
+
+<h1>JS Typed Arrays</h1>
+<p>JavaScript typed arrays are array-like objects that provide a mechanism for reading and writing raw binary data.</p>
+
+<p id="demo"></p>
+
+<script>
+const buffer = new ArrayBuffer(16);
+const int32View = new Int32Array(buffer);
+
+int32View[0] = 42;
+int32View[1] = 10;
+
+document.getElementById("demo").innerHTML = 
+    "int32View[0]: " + int32View[0] + "<br>" +
+    "int32View[1]: " + int32View[1];
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

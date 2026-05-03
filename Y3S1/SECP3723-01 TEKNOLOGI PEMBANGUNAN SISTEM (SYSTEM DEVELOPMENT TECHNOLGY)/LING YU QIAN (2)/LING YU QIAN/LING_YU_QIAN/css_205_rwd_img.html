@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* For width smaller than 400px: */
+body {
+  background-repeat: no-repeat;
+  background-image: url('https://images.unsplash.com/photo-1530092285049-1c42085fd395?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzNzgxMzQ1fHxlbnwwfHx8fHw%3D'); 
+}
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+  body { 
+     background-image: url('https://burst.shopifycdn.com/photos/pink-rose-on-pink.jpg?width=1000&format=pjpg&exif=0&iptc=0'); 
+  }
+}
+</style>
+</head>
+<body>
+
+<img src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg" width="460" height="345">
+<p>Resize the browser window to see how the image will scale.</p>
+
+<p style="margin-top:360px;">Resize the browser width and the background image will change at 400px.</p>
+
+<p style="text-align:right;"><a href="index.html">Back</a></p>
+
+</body>
+</html>

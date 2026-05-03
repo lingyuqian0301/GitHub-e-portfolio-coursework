@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Table Styling C: Sticky Header</h1>
+
+<style>
+  .wrap { max-height: 150px; overflow-y: auto; border:1px solid #ddd; }
+  table.sticky { border-collapse: collapse; width:100%; }
+  table.sticky th, table.sticky td { border:1px solid #ddd; padding:8px; }
+  table.sticky th { position: sticky; top: 0; background: #fafafa; }
+</style>
+
+<div class="wrap">
+  <table class="sticky">
+    <tr><th>Header</th><th>Header</th></tr>
+    <tr><td>Row</td><td>Row</td></tr>
+    <tr><td>Row</td><td>Row</td></tr>
+    <tr><td>Row</td><td>Row</td></tr>
+    <tr><td>Row</td><td>Row</td></tr>
+    <tr><td>Row</td><td>Row</td></tr>
+  </table>
+</div>
+
+<br><br><a href="index.html">Back to Main Page</a>
+</body>
+</html>
+
+

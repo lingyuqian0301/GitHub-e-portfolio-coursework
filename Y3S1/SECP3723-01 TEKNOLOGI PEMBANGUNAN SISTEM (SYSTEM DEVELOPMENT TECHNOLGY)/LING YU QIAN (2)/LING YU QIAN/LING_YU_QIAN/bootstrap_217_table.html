@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Table</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ling</td>
+        <td>Qian</td>
+        <td>lingqian@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Li</td>
+        <td>Sheng</td>
+        <td>lisheng@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Marl</td>
+        <td>June</td>
+        <td>Marl@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jojo</td>
+        <td>Lim</td>
+        <td>jojo@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Ali</td>
+        <td>Muhamad</td>
+        <td>ali@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Jolyn</td>
+        <td>Chin</td>
+        <td>jolyn@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Bordered Table</h2>
+  <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jean</td>
+        <td>Doe</td>
+        <td>jean@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Lee</td>
+        <td>Kek</td>
+        <td>leekek@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Jane</td>
+        <td>jane@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Hover Rows</h2>
+  <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Chloe</td>
+        <td>Lee</td>
+        <td>chloe@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Sumadi</td>
+        <td>Moe</td>
+        <td>sumadi@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Jany</td>
+        <td>Cheok</td>
+        <td>jany@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Black/Dark Table</h2>
+  <p>The .table-dark class adds a black background to the table:</p>            
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Joan</td>
+        <td>Doe</td>
+        <td>joan@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Yoe</td>
+        <td>mary@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Julie</td>
+        <td>Dooley</td>
+        <td>julie@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Dark Striped Table</h2>
+  <p>utm.mybine .table-dark and .table-striped to create a dark, striped table:</p>            
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lily</td>
+        <td>Doe</td>
+        <td>lily@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Jojo</td>
+        <td>Moe</td>
+        <td>moe@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Danny</td>
+        <td>Dooley</td>
+        <td>danny@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Hoverable Dark Table</h2>
+  <p>The .table-hover class adds a hover effect (grey background color) on table rows:</p>            
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Joe</td>
+        <td>Doe</td>
+        <td>joe@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Ken</td>
+        <td>Moe</td>
+        <td>ken@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Joan</td>
+        <td>july@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Borderless Table</h2>
+  <p>The .table-borderless class removes borders from the table:</p>            
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jo</td>
+        <td>Doe</td>
+        <td>jo@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>Mar</td>
+        <td>Moe</td>
+        <td>mar@graduate.utm.my</td>
+      </tr>
+      <tr>
+        <td>June</td>
+        <td>Dooley</td>
+        <td>june@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Contextual Classes</h2>
+  <p>Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active, .table-secondary, .table-light and .table-dark:</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Defaultson</td>
+        <td>def@somemail.utm.my</td>
+      </tr>      
+      <tr class="table-primary">
+        <td>Primary</td>
+        <td>Joe</td>
+        <td>joe@graduate.utm.my</td>
+      </tr>
+      <tr class="table-success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@graduate.utm.my</td>
+      </tr>
+      <tr class="table-danger">
+        <td>Danger</td>
+        <td>Moe</td>
+        <td>mary@graduate.utm.my</td>
+      </tr>
+      <tr class="table-info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@graduate.utm.my</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@graduate.utm.my</td>
+      </tr>
+      <tr class="table-dark">
+        <td>Dark</td>
+        <td>Bo</td>
+        <td>bo@graduate.utm.my</td>
+      </tr>
+      <tr class="table-active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@graduate.utm.my</td>
+      </tr>
+      <tr class="table-secondary">
+        <td>Secondary</td>
+        <td>Secondson</td>
+        <td>sec@graduate.utm.my</td>
+      </tr>
+      <tr class="table-light">
+        <td>Light</td>
+        <td>Angie</td>
+        <td>angie@graduate.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Table Head Colors</h2>
+  <p>You can use any of the contextual classes to only add a color to the table header:</p>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.utm.my</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.utm.my</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead class="table-success">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.utm.my</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.utm.my</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.utm.my</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Small Table</h2>
+  <p>The .table-sm class makes the table smaller by cutting cell padding in half:</p>
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Johnny</td>
+        <td>Doe</td>
+        <td>johnny@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moely</td>
+        <td>moely@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Jan</td>
+        <td>jan@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3">
+  <h2>Responsive Table</h2>
+  <p>The .table-responsive class adds a scrollbar to the table when needed:</p>
+  
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Sex</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+          <td>37</td>
+          <td>Los Angles</td>
+          <td>USA</td>
+          <td>Female</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container mt-3">
+  <h2>Responsive Table</h2>
+  <p>The .table-responsive-sm class creates a responsive table which will scroll horizontally on screens that are less than 576px wide.</p>                                                                                      
+  <p>Resize the browser window to see the effect.</p>
+  <div class="table-responsive-sm">          
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Sex</th>
+        <th>Cook</th>
+        <th>Student</th>
+        <th>Local</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td>Benjamin</td>
+        <td>Nice</td>
+        <td>21</td>
+        <td>New York</td>
+        <td>USA</td>
+        <td>Male</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><a href="index.html">Back</a></p>
+</div>
+
+</body>
+</html>

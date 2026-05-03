@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Array Search</title>
+</head>
+<body>
+
+<h1>JS Array Search</h1>
+<p>JavaScript provides several methods to search for elements in arrays.</p>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo").innerHTML = 
+    "indexOf('Apple'): " + fruits.indexOf("Apple") + "<br>" +
+    "lastIndexOf('Apple'): " + fruits.lastIndexOf("Apple") + "<br>" +
+    "includes('Mango'): " + fruits.includes("Mango") + "<br>" +
+    "find() (length > 5): " + fruits.find(fruit => fruit.length > 5);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

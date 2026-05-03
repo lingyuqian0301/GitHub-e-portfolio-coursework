@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Table Headers</h2>
+
+<p>Use the TH element to define table headers.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Yu Qian</td>
+    <td>Ling</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Jolyn</td>
+    <td>Tee</td>
+    <td>21</td>
+  </tr>
+  <tr>
+    <td>Kuganes</td>
+    <td>Shavindran</td>
+    <td>25</td>
+  </tr>
+</table>
+
+<h2>Vertical Table Headers</h2>
+
+<p>The first column becomes table headers if you set the first table cell in each table row to a TH element:</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <td>Yu Qian</td>
+    <td>Jolyn</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Ling</td>
+    <td>Tee</td>
+  </tr>
+  <tr>
+    <th>Age</th>  
+    <td>20</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<h2>Text-align Headers</h2>
+
+<p>To left-align/center-align/right-align the table headers, use the CSS text-align property.</p>
+
+<table style="width:100%">
+  <tr>
+    <th style="text-align:left;">Firstname</th>
+    <th style="text-align:center;">Lastname</th> 
+    <th style="text-align:right;">Age</th>
+  </tr>
+  <tr>
+    <td>Yu Qian</td>
+    <td>Ling</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Jolyn</td>
+    <td>Tee</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<h2>A header that spans two columns</h2>
+
+<p>Use the colspan attribute to have a header span over multiple columns.</p>
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Yu Qian</td>
+    <td>Ling</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Jolyn</td>
+    <td>Tee</td>
+    <td>21</td>
+  </tr>
+</table>
+
+<h2>Table Caption</h2>
+<p>To add a caption to a table, use the caption tag.</p>
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

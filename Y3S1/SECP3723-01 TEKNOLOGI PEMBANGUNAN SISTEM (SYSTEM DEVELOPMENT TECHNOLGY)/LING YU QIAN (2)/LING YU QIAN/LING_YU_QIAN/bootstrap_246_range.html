@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Range</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+  <h2>Custom Range</h2>
+  <p>To create a custom range menu, add the .form-range class to the input element with type="range":</p>
+  <form action="/action_page.php">
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" name="points">
+    
+    <button type="submit" class="btn btn-primary mt-3">Upload</button>
+  </form>
+</div>
+
+<div class="container mt-3">
+  <h2>Steps in a Range</h2>
+  <p>By default, the interval between the range numbers is 1. You can change it by using the step attribute:</p>
+  <form action="/action_page.php">
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" step="10" name="points">
+    
+    <button type="submit" class="btn btn-primary mt-3">Confirm</button>
+  </form>
+</div>
+
+<div class="container mt-3">
+  <h2>Min and Max Range</h2>
+  <p>Use the min and/or max attribute to specify the minimum/maximum value of a range:</p>
+  <form action="/action_page.php">
+    <label for="customRange" class="form-label">Custom range</label>
+    <input type="range" class="form-range" id="customRange" name="points" min="0" max="4">
+    
+    <button type="submit" class="btn btn-primary mt-3">Enter</button>
+  </form>
+
+  <p><a href="index.html">Back</a></p>
+</div>
+
+</body>
+</html>

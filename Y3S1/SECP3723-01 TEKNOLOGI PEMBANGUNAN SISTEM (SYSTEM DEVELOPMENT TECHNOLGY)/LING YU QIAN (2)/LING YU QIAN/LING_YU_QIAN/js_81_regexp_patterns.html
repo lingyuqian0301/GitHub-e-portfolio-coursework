@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Patterns</title>
+</head>
+<body>
+
+<h1>JS RegExp Patterns</h1>
+<p>Regular expression patterns can be combined to create complex search patterns.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "The rain in Spain stays mainly in the plain";
+let pattern = /[ai]n/g;
+
+document.getElementById("demo").innerHTML = 
+    "Text: " + text + "<br>" +
+    "Pattern: [ai]n<br>" +
+    "Matches: " + text.match(pattern);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

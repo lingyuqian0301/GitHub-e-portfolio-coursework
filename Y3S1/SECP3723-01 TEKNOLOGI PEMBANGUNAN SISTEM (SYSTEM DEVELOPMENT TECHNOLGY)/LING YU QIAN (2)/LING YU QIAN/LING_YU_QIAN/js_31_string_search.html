@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS String Search</title>
+</head>
+<body>
+
+<h1>JS String Search</h1>
+<p>JavaScript provides several methods to search for strings within strings.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Please locate where 'locate' occurs!";
+
+document.getElementById("demo").innerHTML = 
+    "indexOf('locate'): " + text.indexOf("locate") + "<br>" +
+    "lastIndexOf('locate'): " + text.lastIndexOf("locate") + "<br>" +
+    "search('locate'): " + text.search("locate") + "<br>" +
+    "includes('locate'): " + text.includes("locate");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

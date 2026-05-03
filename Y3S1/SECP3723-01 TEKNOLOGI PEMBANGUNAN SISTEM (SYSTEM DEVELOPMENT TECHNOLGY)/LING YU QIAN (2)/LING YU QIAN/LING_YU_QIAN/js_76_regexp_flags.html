@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Flags</title>
+</head>
+<body>
+
+<h1>JS RegExp Flags</h1>
+<p>Regular expression flags modify the search behavior.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Hello World! hello world!";
+
+document.getElementById("demo").innerHTML = 
+    "Text: " + text + "<br>" +
+    "Global (g): " + text.match(/hello/gi) + "<br>" +
+    "Case-insensitive (i): " + text.match(/hello/i) + "<br>" +
+    "Multiline (m): " + text.match(/^Hello/gm);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

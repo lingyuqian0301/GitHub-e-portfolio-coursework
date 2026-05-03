@@ -1,0 +1,142 @@
+R Script:
+
+Hypothesis Testing (2 samples Test):
+# Load necessary libraries
+library(readr)
+library(readxl)
+library(ggplot2)
+
+# Load the data
+heart1 <- read_excel("C:/Users/user/Downloads/heart1.xlsx")
+
+# Separate the ages of males and females
+male_ages <- heart1$age[heart1$sex == 1]
+female_ages <- heart1$age[heart1$sex == 0]
+
+# Calculate means
+mean_male_age <- mean(male_ages, na.rm = TRUE)
+mean_female_age <- mean(female_ages, na.rm = TRUE)
+
+# Perform the two-sample t-test (assuming unequal variances)
+t_test_result <- t.test(male_ages, female_ages, var.equal = FALSE)
+
+# Print the results
+print(t_test_result)
+
+# Create a density plot with mean lines
+ggplot(heart1, aes(x = age, fill = as.factor(sex), color = as.factor(sex))) +
+  geom_density(alpha = 0.5) +
+  geom_vline(aes(xintercept = mean_male_age), color = "blue", linetype = "dashed", size = 1) +
+  geom_vline(aes(xintercept = mean_female_age), color = "red", linetype = "dashed", size = 1) +
+  labs(x = "Age", y = "Density", title = "Density Plot of Age by Sex",
+       subtitle = paste("Mean age (Males):", round(mean_male_age, 2), 
+                        "Mean age (Females):", round(mean_female_age, 2))) +
+  scale_fill_discrete(name = "Sex", labels = c("Female", "Male")) +
+  scale_color_discrete(name = "Sex", labels = c("Female", "Male")) +
+  theme_minimal()
+
+
+
+
+
+Correlation Test:
+# Load necessary libraries
+library(readr)
+library(ggplot2)
+
+# Load the dataset
+file_path <- "Y1S2/PSDA/heart1.csv" # Replace with the actual path to your file
+df <- read_csv(file_path)
+
+# Ensure 'age' and 'thalach' are numeric
+df$age <- as.numeric(df$age)
+df$thalach <- as.numeric(df$thalach)
+
+# Taking two columns
+x = df$age
+y = df$thalach
+
+# Scatter plot with correlation coefficient
+ggplot(data = df, aes(x = age, y = thalach)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  annotate("text", x = mean(df$age), y = max(df$thalach) - 10, 
+           label = paste("Correlation =", round(correlation, 5)), 
+           color = "red", hjust = 0.5, vjust = 1) +
+  labs(title = "age vs. Maximum Heart Rate Achieved", 
+       x = "Age", y = "Maximum Heart Rate Achieved") +
+  theme_minimal()
+
+
+# Calculating Correlation coefficient using cor() method
+correlation <- cor(x, y, method = "pearson")
+
+# Print the correlation coefficient
+cat("Pearson correlation coefficient is:", correlation, "\n")
+
+# Using cor.test() method to get detailed results
+cor_test_result <- cor.test(x, y, method = "pearson")
+print(cor_test_result)
+
+# Define the degrees of freedom and significance level
+df <- 798
+alpha <- 0.05 / 2
+
+# Calculate the t-value for the given df and alpha
+t_value <- qt(1 - alpha, df)
+
+# Print the t-value
+print(paste("The critical value for df =", df, "and alpha =", alpha * 2, "is:", t_value))
+
+
+
+
+Regression Test:
+heart1<-read.csv("C:/Users/tanxu/Downloads/heart1.csv")
+#regression test
+  x=c(heart1$trestbps)
+  y=c(heart1$thalach)
+  
+  model = lm(y~x)
+  print(summary(model))
+  print(cor(x,y))
+  plot(x, y, xlab = "resting blood pressure(tresbps), x", ylab = "maximum heart rate(thalach), y",
+       main = "Relationship between resting blood pressure and maximum heart rate")
+  abline(model)
+  n = length(x)
+  df = n-2
+  alpha=0.05
+  t.alpha = abs(qt(alpha/2,df))
+  cat("t critical value:", -t.alpha, " & ",t.alpha, "\n")
+
+
+
+
+Chi-squared Test of Independence:
+# Load necessary library
+library(readr)
+
+# Load the dataset
+df <- read_csv("heart1.csv")
+
+# Convert columns to factors if they are not already
+df$sex <- as.factor(df$sex)
+df$cp <- as.factor(df$cp)
+
+# Create a contingency table
+contingency_table <- table(df$sex, df$cp)
+
+# Perform Chi-Square Test of Independence
+chi_square_test <- chisq.test(contingency_table)
+
+# Display the results
+chi_square_statistic <- chi_square_test$statistic
+p_value <- chi_square_test$p.value
+degrees_of_freedom <- chi_square_test$parameter
+expected_frequencies <- chi_square_test$expected
+
+print(paste("Chi-Square Statistic:", chi_square_statistic))
+print(paste("P-value:", p_value))
+print(paste("Degrees of Freedom:", degrees_of_freedom))
+print("Expected Frequencies:")
+print(expected_frequencies)

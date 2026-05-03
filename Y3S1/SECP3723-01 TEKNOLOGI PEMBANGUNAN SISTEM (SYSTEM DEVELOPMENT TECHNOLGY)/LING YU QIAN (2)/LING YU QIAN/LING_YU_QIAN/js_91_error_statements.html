@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Error Statements</title>
+</head>
+<body>
+
+<h1>JS Error Statements</h1>
+<p>JavaScript provides error handling statements: try, catch, throw, and finally.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    let message, x;
+    message = document.getElementById("demo");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try {
+        if(x == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5) throw "too low";
+        if(x > 10) throw "too high";
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
+
+document.getElementById("demo").innerHTML = "Error handling with try-catch";
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

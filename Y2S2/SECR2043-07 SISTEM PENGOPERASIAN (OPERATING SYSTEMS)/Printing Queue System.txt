@@ -1,0 +1,45 @@
+import java.util.concurrent.Semaphore;
+
+public class PrintingQueueSimulation {
+
+    private static final Semaphore printerSemaphore = new Semaphore(1);
+
+    static class Computer extends Thread {
+        private final String computerName;
+
+        public Computer(String name) {
+            this.computerName = name;
+        }
+
+        @Override
+        public void run() {
+            System.out.println(computerName + " is trying to print...");
+
+            try {
+                printerSemaphore.acquire();
+                System.out.println(computerName + " has acquired the printer.");
+                printDocument();
+                System.out.println(computerName + " has finished printing.");
+            } catch (InterruptedException e) {
+                System.out.println(computerName + " was interrupted.");
+            } finally {
+                printerSemaphore.release();
+                System.out.println(computerName + " has released the printer.");
+            }
+        }
+
+        private void printDocument() {
+            try {
+                Thread.sleep(2000); // Simulate 2-second print
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            new Computer("Computer " + i).start();
+        }
+    }
+}

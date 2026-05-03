@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Fetch API</title>
+</head>
+<body>
+
+<h1>Web Fetch API</h1>
+<p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline.</p>
+
+<p id="demo"></p>
+
+<script>
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("demo").innerHTML = 
+            "Title: " + data.title.substring(0, 50) + "...";
+    })
+    .catch(error => {
+        document.getElementById("demo").innerHTML = "Error: " + error;
+    });
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

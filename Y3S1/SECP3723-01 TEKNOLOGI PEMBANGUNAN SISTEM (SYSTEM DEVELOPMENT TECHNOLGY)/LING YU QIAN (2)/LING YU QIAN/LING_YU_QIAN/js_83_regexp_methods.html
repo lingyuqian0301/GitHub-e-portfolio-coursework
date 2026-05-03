@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Methods</title>
+</head>
+<body>
+
+<h1>JS RegExp Methods</h1>
+<p>Regular expressions have methods like test() and exec().</p>
+
+<p id="demo"></p>
+
+<script>
+let pattern = /e/;
+let text = "The best things in life are free!";
+
+document.getElementById("demo").innerHTML = 
+    "Pattern: /e/<br>" +
+    "Text: " + text + "<br>" +
+    "test(): " + pattern.test(text) + "<br>" +
+    "exec(): " + pattern.exec(text);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

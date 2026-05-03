@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style> 
+div.a {
+  width: 110px;
+  height: 110px;
+  background: orange;
+  transition: width 2s;
+}
+
+div.a:hover {
+  width: 310px;
+}
+
+div.b {
+  width: 100px;
+  height: 100px;
+  background: orangered;
+  transition: width 2s, height 4s;
+}
+
+div.b:hover {
+  width: 310px;
+  height: 310px;
+}
+
+div.c {
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  transition: width 3s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+div.c:hover {
+  width: 300px;
+}
+
+div.d {
+  width: 100px;
+  height: 100px;
+  background: tomato;
+  transition: width 3s;
+  transition-delay: 1.5s;
+}
+
+div.d:hover {
+  width: 300px;
+}
+
+div.e {
+  width: 120px;
+  height: 120px;
+  background: lightyellow;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div.e:hover {
+  width: 310px;
+  height: 310px;
+  transform: rotate(180deg);
+}
+
+div.f {
+  width: 105px;
+  height: 105px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+div.f:hover {
+  width: 305px;
+}
+</style>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div class="a"></div>
+
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div class="b"></div>
+
+<h1>The transition-timing-function Property</h1>
+
+<p>Hover over the div elements below, to see the different speed curves:</p>
+
+<div class="c" id="div1">linear</div><br>
+<div class="c" id="div2">ease</div><br>
+<div class="c" id="div3">ease-in</div><br>
+<div class="c" id="div4">ease-out</div><br>
+<div class="c" id="div5">ease-in-out</div><br>
+
+<h1>The transition-delay Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div class="d"></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+<h1>Transition + Transform</h1>
+
+<p>Hover over the div element below:</p>
+
+<div class="e"></div>
+
+<h1>Using The transition Shorthand Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div class="f"></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

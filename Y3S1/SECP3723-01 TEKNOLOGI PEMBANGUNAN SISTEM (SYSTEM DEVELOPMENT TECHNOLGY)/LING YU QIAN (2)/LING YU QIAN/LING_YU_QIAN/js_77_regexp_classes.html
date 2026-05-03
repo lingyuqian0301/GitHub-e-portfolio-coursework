@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Classes</title>
+</head>
+<body>
+
+<h1>JS RegExp Classes</h1>
+<p>Character classes are used to match any one of several characters.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Is this all there is?";
+let pattern1 = /[a-c]/g;
+let pattern2 = /[0-9]/g;
+let pattern3 = /[^a-c]/g;
+
+document.getElementById("demo").innerHTML = 
+    "Text: " + text + "<br>" +
+    "[a-c]: " + text.match(pattern1) + "<br>" +
+    "[0-9]: " + text.match(pattern2) + "<br>" +
+    "[^a-c]: " + text.match(pattern3).slice(0, 10).join("") + "...";
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

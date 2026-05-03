@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Server</title>
+</head>
+<body>
+
+<h1>JSON Server</h1>
+<p>JSON can be used to exchange data with a server.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"name":"John", "age":30, "city":"New York"}';
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+    "Data from server: " + obj.name + ", " + obj.age + ", " + obj.city;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

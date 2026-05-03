@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h2>The input Element</h2>
+
+<form action="/action_page.php">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php">
+  <label for="food">Choose a food:</label>
+  <select id="food" name="food">
+    <option value="egg">Egg</option>
+    <option value="mihun">Mihun</option>
+    <option value="kueyteow">KueyTeow</option>
+    <option value="maggi">Maggi Goreng</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>Pre-selected Option</h2>
+
+<p>You can preselect an option with the selected attribute:</p>
+
+<form action="/action_page.php">
+  <label for="food">Choose a food:</label>
+  <select id="food" name="food">
+    <option value="egg">Egg</option>
+    <option value="mihun">Mihun</option>
+    <option value="kueyteow" selected>KueyTeow</option>
+    <option value="maggi">Maggi Goreng</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>Visible Option Values</h2>
+
+<p>Use the size attribute to specify the number of visible values.</p>
+
+<form action="/action_page.php">
+  <label for="food">Choose a food:</label>
+  <select id="food" name="food" size="2">
+    <option value="egg">Egg</option>
+    <option value="mihun">Mihun</option>
+    <option value="kueyteow">KueyTeow</option>
+    <option value="maggi">Maggi Goreng</option>
+  </select>
+  <input type="submit">
+</form>
+
+<h2>Allow Multiple Selections</h2>
+
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="/action_page.php">
+  <label for="food">Choose a food:</label>
+  <select id="food" name="food" size="3" multiple>
+    <option value="egg">Egg</option>
+    <option value="mihun">Mihun</option>
+    <option value="kueyteow">KueyTeow</option>
+    <option value="maggi">Maggi Goreng</option>
+  </select>
+  <input type="submit">
+</form>
+
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="12" cols="32">I like to eat icecream.</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+
+<h2>Styling Textarea</h2>
+
+<p>Use CSS to change the size of the textarea:</p>
+
+<form action="/action_page.php">
+  <textarea name="message" style="width:250px; height:550px;">Where is my family?</textarea>
+  <br>
+  <input type="submit">
+</form>
+
+<h2>The button Element</h2>
+
+<button type="button" onclick="alert('Good morning!')">Click Me!</button>
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Persona:</legend>
+    <label for="fname1">First name:</label><br>
+    <input type="text" id="fname1" name="fname1" value="John"><br>
+    <label for="lname1">Last name:</label><br>
+    <input type="text" id="lname1" name="lname1" value="Jojo"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<h2>The datalist Element</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browser" name="browser">
+  <datalist id="browser">
+    <option value="Microsoft Edge">
+    <option value="Firefox">
+    <option value="Google Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="60">
+  150 +
+  <input type="number" id="b" name="b" value="55">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

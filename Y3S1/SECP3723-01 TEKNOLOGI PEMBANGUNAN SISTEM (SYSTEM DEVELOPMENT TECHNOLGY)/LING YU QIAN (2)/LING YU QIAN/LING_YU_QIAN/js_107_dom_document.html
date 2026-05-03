@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Document</title>
+</head>
+<body>
+
+<h1>DOM Document</h1>
+<p>The document object represents your web page.</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+    "Document title: " + document.title + "<br>" +
+    "Document body: " + document.body.innerHTML.substring(0, 50) + "...";
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

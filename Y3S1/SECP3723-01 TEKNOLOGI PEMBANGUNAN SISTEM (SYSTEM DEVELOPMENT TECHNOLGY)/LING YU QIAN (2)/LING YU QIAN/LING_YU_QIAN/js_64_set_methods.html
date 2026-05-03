@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Set Methods</title>
+</head>
+<body>
+
+<h1>JS Set Methods</h1>
+<p>JavaScript Set methods for working with sets.</p>
+
+<p id="demo"></p>
+
+<script>
+const mySet = new Set();
+mySet.add("a");
+mySet.add("b");
+mySet.add("c");
+
+document.getElementById("demo").innerHTML = 
+    "Size: " + mySet.size + "<br>" +
+    "Has 'a': " + mySet.has("a") + "<br>" +
+    "Values: " + Array.from(mySet).join(", ");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

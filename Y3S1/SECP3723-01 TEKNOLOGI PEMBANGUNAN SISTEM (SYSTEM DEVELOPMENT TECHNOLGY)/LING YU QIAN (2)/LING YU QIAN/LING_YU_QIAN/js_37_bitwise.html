@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Bitwise</title>
+</head>
+<body>
+
+<h1>JS Bitwise</h1>
+<p>JavaScript bitwise operators work on 32-bit numbers.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;
+let y = 1;
+
+document.getElementById("demo").innerHTML = 
+    "x = " + x + " (binary: " + x.toString(2) + ")<br>" +
+    "y = " + y + " (binary: " + y.toString(2) + ")<br>" +
+    "x & y = " + (x & y) + "<br>" +
+    "x | y = " + (x | y) + "<br>" +
+    "x ^ y = " + (x ^ y) + "<br>" +
+    "~x = " + (~x) + "<br>" +
+    "x << 1 = " + (x << 1) + "<br>" +
+    "x >> 1 = " + (x >> 1);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

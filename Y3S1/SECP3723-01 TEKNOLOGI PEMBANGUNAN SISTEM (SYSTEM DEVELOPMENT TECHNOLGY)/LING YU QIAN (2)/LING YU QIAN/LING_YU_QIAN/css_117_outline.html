@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+p {outline-color:blue;}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+p.ex1 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: green;
+  outline-width: thin;
+}
+p.ex2 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: green;
+  outline-width: medium;
+}
+p.ex3 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: green;
+  outline-width: thick;
+}
+p.ex4 {
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: green;
+  outline-width: 5px;
+}
+p.ex5 {
+  border: 3px solid black;
+  outline-style: solid;
+  outline-color: #ff0000; /* red */;
+}
+p.ex6 {
+  border: 1px solid black;
+  outline-style: dotted;
+  outline-color: rgb(0, 0, 255); /* blue */;
+}
+p.ex7 {
+  border: 4px solid black;
+  outline-style: outset;
+  outline-color: hsl(0, 0%, 73%); /* grey */
+}
+p.ex8 {outline: dashed;}
+p.ex9 {outline: dotted darkred;}
+p.ex10 {outline: 4px solid yellow;}
+p.ex11 {outline: thick ridge coral;}
+p.ex12 {
+  margin: 28px;
+  background:yellow;
+  border: 1px solid black;
+  outline: 1px solid red;
+  outline-offset: 14px;
+}
+</style>
+</head>
+<body>
+
+<h2>The outline-style Property</h2>
+
+<p class="dotted">A dotted outline</p>
+<p class="dashed">A dashed outline</p>
+<p class="solid">A solid outline</p>
+<p class="double">A double outline</p>
+<p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+<h2>The outline-width Property</h2>
+
+<p class="ex1">A thin outline.</p>
+<p class="ex2">A medium outline.</p>
+<p class="ex3">A thick outline.</p>
+<p class="ex4">A 5px thick outline.</p>
+
+<h2>The outline-color Property</h2>
+<p>The outline-color property is used to set the color of the outline.</p>
+
+<p class="ex5">A solid red outline.</p>
+<p class="ex6">A dotted blue outline.</p>
+<p class="ex7">An outset grey outline.</p>
+
+<h2>The outline Property</h2>
+
+<p class="ex8">A dashed outline.</p>
+<p class="ex9">A dotted darkred outline.</p>
+<p class="ex10">A 4px solid yellow outline.</p>
+<p class="ex11">A thick ridge coral outline.</p>
+
+<h2>The outline-offset Property</h2>
+
+<p class="ex12">This paragraph has an outline of 14px outside the border edge.</p>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Worker API</title>
+</head>
+<body>
+
+<h1>Web Worker API</h1>
+<p>A web worker is a JavaScript running in the background, without affecting the performance of the page.</p>
+
+<p>Count numbers: <output id="result"></output></p>
+<button onclick="startWorker()">Start Worker</button>
+<button onclick="stopWorker()">Stop Worker</button>
+
+<p id="demo"></p>
+
+<script>
+let w;
+
+function startWorker() {
+    if(typeof(Worker) !== "undefined") {
+        if(typeof(w) == "undefined") {
+            w = new Worker("demo_workers.js");
+        }
+        w.onmessage = function(event) {
+            document.getElementById("result").innerHTML = event.data;
+        };
+    } else {
+        document.getElementById("demo").innerHTML = "Sorry, your browser does not support Web Workers...";
+    }
+}
+
+function stopWorker() {
+    w.terminate();
+    w = undefined;
+}
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

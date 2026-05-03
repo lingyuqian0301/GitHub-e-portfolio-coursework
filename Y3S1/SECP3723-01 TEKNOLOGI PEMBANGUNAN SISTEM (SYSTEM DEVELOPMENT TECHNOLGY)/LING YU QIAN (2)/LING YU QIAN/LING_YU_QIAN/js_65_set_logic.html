@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Set Logic</title>
+</head>
+<body>
+
+<h1>JS Set Logic</h1>
+<p>Set operations like union, intersection, and difference.</p>
+
+<p id="demo"></p>
+
+<script>
+const setA = new Set([1, 2, 3]);
+const setB = new Set([2, 3, 4]);
+
+// Union
+const union = new Set([...setA, ...setB]);
+
+// Intersection
+const intersection = new Set([...setA].filter(x => setB.has(x)));
+
+document.getElementById("demo").innerHTML = 
+    "Set A: " + Array.from(setA).join(", ") + "<br>" +
+    "Set B: " + Array.from(setB).join(", ") + "<br>" +
+    "Union: " + Array.from(union).join(", ") + "<br>" +
+    "Intersection: " + Array.from(intersection).join(", ");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

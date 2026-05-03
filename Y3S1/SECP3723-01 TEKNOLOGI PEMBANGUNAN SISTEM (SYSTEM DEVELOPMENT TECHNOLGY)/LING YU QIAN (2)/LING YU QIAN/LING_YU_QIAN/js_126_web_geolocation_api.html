@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Geolocation API</title>
+</head>
+<body>
+
+<h1>Web Geolocation API</h1>
+<p>The Geolocation API is used to get the geographical position of a user.</p>
+
+<p id="demo"></p>
+
+<button onclick="getLocation()">Get Location</button>
+
+<script>
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        document.getElementById("demo").innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    document.getElementById("demo").innerHTML = 
+        "Latitude: " + position.coords.latitude + "<br>" +
+        "Longitude: " + position.coords.longitude;
+}
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

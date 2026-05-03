@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS RegExp Objects</title>
+</head>
+<body>
+
+<h1>JS RegExp Objects</h1>
+<p>A regular expression is an object that describes a pattern of characters.</p>
+
+<p id="demo"></p>
+
+<script>
+let pattern = /w3schools/i;
+let text = "Visit W3Schools!";
+
+document.getElementById("demo").innerHTML = 
+    "Pattern: /w3schools/i<br>" +
+    "Text: " + text + "<br>" +
+    "Match: " + (pattern.test(text) ? "Found" : "Not found");
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

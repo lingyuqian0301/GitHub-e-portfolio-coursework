@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Array Iterations</title>
+</head>
+<body>
+
+<h1>JS Array Iterations</h1>
+<p>Array iteration methods operate on every array item.</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+let text = "";
+
+numbers.forEach(function(value, index, array) {
+    text += value + " ";
+});
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

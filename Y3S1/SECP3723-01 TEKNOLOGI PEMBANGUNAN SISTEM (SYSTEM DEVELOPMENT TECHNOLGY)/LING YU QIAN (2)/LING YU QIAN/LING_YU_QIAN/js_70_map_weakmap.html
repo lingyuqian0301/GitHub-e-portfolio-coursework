@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Map WeakMap</title>
+</head>
+<body>
+
+<h1>JS Map WeakMap</h1>
+<p>A WeakMap is a collection of key/value pairs where the keys are objects.</p>
+
+<p id="demo"></p>
+
+<script>
+const weakMap = new WeakMap();
+const obj1 = {};
+const obj2 = {};
+
+weakMap.set(obj1, "value1");
+weakMap.set(obj2, "value2");
+
+document.getElementById("demo").innerHTML = 
+    "WeakMap has obj1: " + weakMap.has(obj1) + "<br>" +
+    "WeakMap get obj1: " + weakMap.get(obj1);
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

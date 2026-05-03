@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Continue</title>
+</head>
+<body>
+
+<h1>JS Continue</h1>
+<p>The <code>continue</code> statement "jumps over" one iteration in the loop.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+for (let i = 0; i < 10; i++) {
+    if (i === 3) { continue; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

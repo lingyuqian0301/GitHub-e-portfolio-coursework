@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Errors Silent</title>
+</head>
+<body>
+
+<h1>JS Errors Silent</h1>
+<p>Some errors are silent and don't throw exceptions.</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 10;
+let y = 0;
+let result = x / y;
+
+document.getElementById("demo").innerHTML = 
+    "10 / 0 = " + result + "<br>" +
+    "Type: " + typeof result;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

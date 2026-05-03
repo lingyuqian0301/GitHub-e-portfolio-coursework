@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Forms</title>
+</head>
+<body>
+
+<h1>DOM Forms</h1>
+<p>JavaScript can access and manipulate HTML form elements.</p>
+
+<form id="myForm">
+    <input type="text" id="fname" value="John">
+</form>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+    "Form value: " + document.getElementById("fname").value;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

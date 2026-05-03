@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Table Borders C: Border Collapse vs Separate</h1>
+
+<style>
+  .collapsed { border-collapse: collapse; }
+  .separate { border-collapse: separate; border-spacing: 6px; }
+  table td, table th { border: 1px solid #999; padding: 6px 8px; }
+</style>
+
+<h3>Collapsed</h3>
+<table class="collapsed">
+  <tr><th>A</th><th>B</th></tr>
+  <tr><td>1</td><td>2</td></tr>
+</table>
+
+<h3>Separate</h3>
+<table class="separate">
+  <tr><th>A</th><th>B</th></tr>
+  <tr><td>1</td><td>2</td></tr>
+</table>
+
+<br><br><a href="index.html">Back to Main Page</a>
+</body>
+</html>
+
+

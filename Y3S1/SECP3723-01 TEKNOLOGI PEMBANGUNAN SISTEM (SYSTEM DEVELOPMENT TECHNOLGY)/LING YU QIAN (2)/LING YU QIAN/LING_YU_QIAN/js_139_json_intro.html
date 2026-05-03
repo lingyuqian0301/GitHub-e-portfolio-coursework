@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Intro</title>
+</head>
+<body>
+
+<h1>JSON Intro</h1>
+<p>JSON stands for JavaScript Object Notation. JSON is a lightweight data interchange format.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+    obj.employees[0].firstName + " " + obj.employees[0].lastName;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

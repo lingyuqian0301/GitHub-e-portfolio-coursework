@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<style>
+table.a, td.a, th.a {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table.a {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th.a, td.a {
+  padding: 20px;
+}
+
+table.b {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.b, td.b {
+  padding: 6px;
+  text-align: right;
+  border-bottom: 2px solid #ddd;
+}
+
+table.c {
+  border-collapse: collapse;
+  width: 75%;
+}
+
+th.c, td.c {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr.c:hover {background-color: lightyellow;}
+
+table.d {
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th.d, td.d {
+  text-align: left;
+  padding: 6px;
+}
+
+tr.d:nth-child(even) {background-color: #f2f2f0;}
+
+table.e {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th.e, td.e {
+  text-align: right;
+  padding: 11px;
+}
+
+tr.e:nth-child(even){background-color: #f2f2f5}
+
+th.e {
+  background-color: #04AA6D;
+  color: maroon;
+}
+</style>
+</head>
+<body>
+
+<h2>The padding Property</h2>
+
+<p>This property adds space between the border and the content in a table.</p>
+
+<table class="a">
+  <tr class="a">
+    <th class="a">Firstname</th>
+    <th class="a">Lastname</th>
+    <th class="a">Matric No</th>
+  </tr>
+  <tr class="a">
+    <td class="a">Yu Qian</td>
+    <td class="a">Ling</td>
+    <td class="a">A22EC0093</td>
+  </tr>
+  <tr class="a">
+    <td class="a">Nicholas</td>
+    <td class="a">Wong</td>
+    <td class="a">A22EC0282</td>
+  </tr>
+  <tr class="a">
+    <td class="a">Joe</td>
+    <td class="a">Jonathan</td>
+    <td class="a">A23CS1234</td>
+  </tr>
+  <tr class="a">
+    <td class="a">Joan</td>
+    <td class="a">Lam</td>
+    <td class="a">A20EC1256</td>
+  </tr>
+</table>
+
+<h2>Bordered Table Dividers</h2>
+<p>Add the border-bottom property to th and td for horizontal dividers:</p>
+
+<table class="b">
+  <tr class="b">
+    <th class="b">Firstname</th>
+    <th class="b">Lastname</th>
+    <th class="b">Savings</th>
+  </tr>
+  <tr class="b">
+    <td class="b">Peter</td>
+    <td class="b">Goh</td>
+    <td class="b">Rm3000</td>
+  </tr>
+  <tr class="b">
+    <td class="b">Lois</td>
+    <td class="b">Ali</td>
+    <td class="b">Rm15970</td>
+  </tr>
+  <tr class="b">
+    <td class="b">Joe</td>
+    <td class="b">Lee</td>
+    <td class="b">Rm115789</td>
+  </tr>
+  <tr class="b">
+    <td class="b">Cam</td>
+    <td class="b">Sumudai</td>
+    <td class="b">Rm12345</td>
+  </tr>
+</table>
+
+<h2>Hoverable Table</h2>
+
+<p>Move the mouse over the table rows to see the effect.</p>
+
+<table class="c">
+  <tr class="c">
+    <th class="c">Firstname</th>
+    <th class="c">Lastname</th>
+    <th class="c">Matric No</th>
+  </tr>
+  <tr class="c">
+    <td class="c">Yu Qian</td>
+    <td class="c">Ling</td>
+    <td class="c">A22EC0093</td>
+  </tr>
+  <tr class="c">
+    <td class="c">Nicholas</td>
+    <td class="c">Wong</td>
+    <td class="c">A22EC0282</td>
+  </tr>
+  <tr class="c">
+    <td class="c">Joe</td>
+    <td class="c">Jonathan</td>
+    <td class="c">A23CS1234</td>
+  </tr>
+  <tr class="c">
+    <td class="c">Joan</td>
+    <td class="c">Lam</td>
+    <td class="c">A20EC1256</td>
+  </tr>
+</table>
+
+<h2>Striped Table</h2>
+
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table class="d">
+  <tr class="d">
+    <th class="d">Firstname</th>
+    <th class="d">Lastname</th>
+    <th class="d">Savings</th>
+  </tr>
+  <tr class="d">
+    <td class="d">Peter</td>
+    <td class="d">Goh</td>
+    <td class="d">Rm3000</td>
+  </tr>
+  <tr class="d">
+    <td class="d">Lois</td>
+    <td class="d">Ali</td>
+    <td class="d">Rm15970</td>
+  </tr>
+  <tr class="d">
+    <td class="d">Joe</td>
+    <td class="d">Lee</td>
+    <td class="d">Rm115789</td>
+  </tr>
+  <tr class="d">
+    <td class="d">Cam</td>
+    <td class="d">Sumudai</td>
+    <td class="d">Rm12345</td>
+  </tr>
+</table>
+
+<h2>Colored Table Header</h2>
+
+<table class="e">
+  <tr class="e">
+    <th class="e">Firstname</th>
+    <th class="e">Lastname</th>
+    <th class="e">Matric No</th>
+  </tr>
+  <tr class="e">
+    <td class="e">Yu Qian</td>
+    <td class="e">Ling</td>
+    <td class="e">A22EC0093</td>
+  </tr>
+  <tr class="e">
+    <td class="e">Nicholas</td>
+    <td class="e">Wong</td>
+    <td class="e">A22EC0282</td>
+  </tr>
+  <tr class="e">
+    <td class="e">Joe</td>
+    <td class="e">Jonathan</td>
+    <td class="e">A23CS1234</td>
+  </tr>
+</table>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

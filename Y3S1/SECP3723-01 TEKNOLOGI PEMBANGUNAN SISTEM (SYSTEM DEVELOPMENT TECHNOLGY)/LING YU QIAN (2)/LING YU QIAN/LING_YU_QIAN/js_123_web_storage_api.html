@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Storage API</title>
+</head>
+<body>
+
+<h1>Web Storage API</h1>
+<p>The Web Storage API provides mechanisms for storing data in the browser.</p>
+
+<p id="demo"></p>
+
+<script>
+// Store data
+localStorage.setItem("name", "John");
+sessionStorage.setItem("session", "data");
+
+// Retrieve data
+let name = localStorage.getItem("name");
+let session = sessionStorage.getItem("session");
+
+document.getElementById("demo").innerHTML = 
+    "LocalStorage name: " + name + "<br>" +
+    "SessionStorage session: " + session;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

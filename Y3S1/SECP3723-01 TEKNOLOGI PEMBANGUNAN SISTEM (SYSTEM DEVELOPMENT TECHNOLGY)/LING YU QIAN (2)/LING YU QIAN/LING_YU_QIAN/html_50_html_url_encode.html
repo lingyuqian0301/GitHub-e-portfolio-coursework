@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML URL Encode</title>
+  <script>
+    function showDecoded(){
+      const encoded = document.getElementById('encoded').value;
+      document.getElementById('decoded').textContent = decodeURIComponent(encoded);
+    }
+  </script>
+</head>
+<body>
+
+<h1>HTML URL Encode</h1>
+
+<p>Enter an encoded URL component, then decode with JavaScript:</p>
+<input id="encoded" value="Hello%20World%21%20%F0%9F%8C%8D" style="width:60%">
+<button onclick="showDecoded()">Decode</button>
+
+<p>Decoded: <span id="decoded" style="color:teal"></span></p>
+
+<br><br><a href="index.html">Main Page</a>
+
+</body>
+</html>

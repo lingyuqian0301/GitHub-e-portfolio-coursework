@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSON Data Types</title>
+</head>
+<body>
+
+<h1>JSON Data Types</h1>
+<p>JSON supports various data types: strings, numbers, objects, arrays, booleans, and null.</p>
+
+<p id="demo"></p>
+
+<script>
+let text = '{"string":"Hello", "number":42, "boolean":true, "null":null, "array":[1,2,3], "object":{"key":"value"}}';
+let obj = JSON.parse(text);
+
+document.getElementById("demo").innerHTML = 
+    "String: " + obj.string + "<br>" +
+    "Number: " + obj.number + "<br>" +
+    "Boolean: " + obj.boolean + "<br>" +
+    "Null: " + obj.null + "<br>" +
+    "Array: " + obj.array + "<br>" +
+    "Object: " + obj.object.key;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

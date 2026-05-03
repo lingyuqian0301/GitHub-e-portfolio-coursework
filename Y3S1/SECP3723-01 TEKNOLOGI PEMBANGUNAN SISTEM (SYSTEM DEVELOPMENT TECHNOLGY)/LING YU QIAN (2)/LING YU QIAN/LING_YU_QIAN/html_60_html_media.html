@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Media</title>
+</head>
+<body>
+
+<h1>HTML Media</h1>
+
+<p>HTML supports audio and video via native elements. Controls, multiple sources, and captions can be added.</p>
+
+<h3>Video (simple)</h3>
+<video width="320" height="180" controls poster="images/pic_trulli.jpg">
+  <!-- Local video: place a file named media/sample.mp4 if you want a local demo -->
+  <source src="media/sample.mp4" type="video/mp4">
+  <!-- Remote fallback sample (will play if the local file is not present) -->
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<h3>Audio (simple)</h3>
+<audio controls>
+  <!-- Prefer local MP3 (placed earlier in the session as media/track.mp3) -->
+  <source src="media/track.mp3" type="audio/mpeg">
+  <!-- OGG fallback if you provide media/track.ogg -->
+  <source src="media/track.ogg" type="audio/ogg">
+  <!-- Remote fallback sample: used only if local files are missing -->
+  <source src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MP3_700KB.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<br><br><a href="index.html">Main Page</a>
+
+</body>
+</html>

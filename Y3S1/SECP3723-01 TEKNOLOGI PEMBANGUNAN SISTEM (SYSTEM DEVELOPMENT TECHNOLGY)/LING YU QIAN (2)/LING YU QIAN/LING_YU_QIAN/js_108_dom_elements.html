@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM Elements</title>
+</head>
+<body>
+
+<h1>DOM Elements</h1>
+<p>Finding HTML elements by id, class name, tag name, CSS selectors, and HTML object collections.</p>
+
+<p id="demo"></p>
+<p class="test">Test paragraph</p>
+
+<script>
+document.getElementById("demo").innerHTML = 
+    "Element by ID: " + document.getElementById("demo").tagName + "<br>" +
+    "Elements by class: " + document.getElementsByClassName("test").length;
+</script>
+
+<br><br><a href="index.html">Main Page</a>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Royin"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Joey"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<h2>The form target attribute</h2>
+
+<p>When submitting this form, the result will be opened in a new browser tab:</p>
+
+<form action="/action_page.php" target="_blank">
+  <label for="fName">First name:</label><br>
+  <input type="text" id="fName" name="fName" value=" "><br>
+  <label for="lName">Last name:</label><br>
+  <input type="text" id="lName" name="lName" value=" "><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h2>The Method Attribute</h2>
+
+<p>This form will be submitted using the GET method:</p>
+
+<form action="/action_page.php" target="_blank" method="get">
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age" value="20"><br>
+  <label for="section">Section:</label><br>
+  <input type="text" id="section" name="section" value="01"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+
+<p>This form will be submitted using the POST method:</p>
+
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="age">Age:</label><br>
+  <input type="text" id="age" name="age" value=" "><br>
+  <label for="section">Section:</label><br>
+  <input type="text" id="section" name="section" value=" "><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+
+<h1>The form autocomplete attribute</h1>
+
+<p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
+
+<p>Then, try to set autocomplete to "off".</p>
+
+<form action="/action_page.php" autocomplete="on">
+  <label for="id">UTM Id:</label>
+  <input type="text" id="id" name="id"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+<p>
+<form action="/action_page.php" autocomplete="off">
+  <label for="id">UTM Id:</label>
+  <input type="text" id="id" name="id"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+</p>
+
+<h1>The Form Novalidate Attribute</h1>
+
+<p>The novalidate attribute indicates that the form input is not to be validated on submit:</p>
+
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+<p><a href="index.html">Back</a></p>
+
+</body>
+</html>

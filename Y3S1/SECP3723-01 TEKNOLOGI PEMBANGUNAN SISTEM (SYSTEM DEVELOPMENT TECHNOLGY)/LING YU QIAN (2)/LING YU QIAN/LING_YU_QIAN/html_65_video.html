@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en-US"> 
+<body> 
+
+<p><video width="400" controls>
+  <source src="videos/sunset.mp4" type="video/mp4">
+  Your browser does not support HTML video.
+</video></p>
+
+<p>
+Video courtesy of 
+<a href="https://mixkit.co/free-stock-video/stunning-sunset-seen-from-the-sea-4119/" target="_blank">Stunning sunset seen from the sea</a>.
+</p>
+
+<p><video width="320" height="240" controls>
+  <source src="videos/sunset.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video></p>
+
+<video width="320" height="240" autoplay>
+  <source src="videos/sunset.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="320" height="240" autoplay muted>
+  <source src="videos/sunset.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video" width="420">
+    <source src="videos/sunset.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var newVideo = document.getElementById("video"); 
+
+function playPause() { 
+  if (newVideo.paused) 
+    newVideo.play(); 
+  else 
+    newVideo.pause(); 
+} 
+
+function makeBig() { 
+    newVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    newVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    newVideo.width = 420; 
+} 
+</script> 
+
+<p style="text-align: center;">Video courtesy of <a href="https://mixkit.co/free-stock-video/stunning-sunset-seen-from-the-sea-4119/" target="_blank">Stunning sunset seen from the sea</a>.</p>
+
+<a href="index.html">Back</a>
+
+</body> 
+</html>
