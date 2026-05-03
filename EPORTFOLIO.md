@@ -1,6 +1,6 @@
 # E-Portfolio Index
 
-This portfolio is organized by semester. Open the pages below for the full reflection drafts and assignment-level coverage.
+This portfolio is organized by semester and each course page now breaks reflections down by assignment or project.
 
 ## Pages
 - [Y1S1](portfolio/Y1S1.md)
@@ -11,7 +11,5 @@ This portfolio is organized by semester. Open the pages below for the full refle
 - [Y3S2](portfolio/Y3S2.md)
 
 ## Notes
-- Each semester page includes the main deliverables found in that folder.
-- Add your own screenshots, links, and citation credits where needed.
-- If a course folder is sparse or empty, the page notes that so you can fill in missing evidence manually.
+- Each semester page includes assignment-by-assignment reflections for the visible deliverables found in that folder.
 
