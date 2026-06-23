@@ -78,3 +78,6 @@ Below are my critical reflections and technical analyses for each core project a
 * **Context:** An industry talk hosted by TM detailing the "Technology Information System & 4.0th Industrial Revolution".
 * **Reflection & Analysis:**
   TM’s presentation on the 4th Industrial Revolution covered the integration of advanced automation, Internet of Things (IoT), and big data analytics. The speakers highlighted how these technologies are actively reshaping industries and optimizing telecommunication processes. Listening to how TM handles massive volumes of real-time network data made me re-evaluate my approach to data processing. While my Apache Spark project handled 2.2GB of batch data effectively, the TM talk highlighted that the future of the industry lies in real-time streaming analytics. It challenged me to start thinking beyond batch-processing frameworks and to explore how edge-computing and 5G will impact data pipeline latency in the near future.
+
+---
+
